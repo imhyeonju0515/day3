@@ -40,7 +40,13 @@ async function callGemini(key, contents) {
 module.exports = async (req, res) => {
   if (req.method !== 'POST') return res.status(405).json({ error: 'POST 로 요청해 주세요.' });
   const key = process.env.GEMINI_API_KEY;
-  if (!key) return res.status(500).json({ error: 'GEMINI_API_KEY 환경변수가 설정되지 않았습니다.' });
+  if (!key) {
+    // 진단용: 값은 절대 내보내지 않고, 키와 비슷한 "이름"만 알려 줌(오타·공백·다른 이름 찾기)
+    const similar = Object.keys(process.env).filter((n) => /gemini|google|api|key/i.test(n) && !/^(VERCEL|AWS|NODE|npm_)/i.test(n));
+    return res.status(500).json({
+      error: 'GEMINI_API_KEY 환경변수가 설정되지 않았습니다.' + (similar.length ? ' (비슷한 이름: ' + similar.map((n) => '"' + n + '"').join(', ') + ')' : ' (키와 비슷한 이름의 변수가 하나도 없습니다)'),
+    });
+  }
 
   const message = String((req.body && req.body.message) || '').trim().slice(0, 500);
   if (!message) return res.status(400).json({ error: '메시지(message)가 필요합니다.' });
