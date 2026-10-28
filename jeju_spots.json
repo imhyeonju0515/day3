@@ -1,2099 +1,2749 @@
 {
- "region": "제주특별자치도",
- "note": "강의용 관광지 목록 — 이름 · 지역 · 실내/야외 · 유형만 담았습니다. 운영시간 · 요금 · 휴무는 바뀌므로 넣지 않았습니다. 방문 전 공식 안내로 확인하세요. 이 목록은 제주특별자치도 안의 장소만 다룹니다.",
- "area_rule": "괄호 안은 읍면입니다(성산읍·구좌읍·한림읍·안덕면). 그 밖의 제주시 읍면(애월·조천·한경·우도·추자)은 '제주시', 그 밖의 서귀포시 읍면(대정·남원·표선)은 '서귀포'로 분류했습니다.",
- "areas": [
-  "동쪽(성산)",
-  "동쪽(구좌)",
-  "제주시",
-  "서쪽(한림)",
-  "서쪽(안덕)",
-  "서귀포"
- ],
- "out_of_scope_examples": [
-  {
-   "name": "해운대해수욕장",
-   "region": "부산광역시"
-  },
-  {
-   "name": "광안리해수욕장",
-   "region": "부산광역시"
-  },
-  {
-   "name": "감천문화마을",
-   "region": "부산광역시"
-  },
-  {
-   "name": "경포해변",
-   "region": "강원특별자치도 강릉시"
-  },
-  {
-   "name": "설악산",
-   "region": "강원특별자치도"
-  },
-  {
-   "name": "남산서울타워",
-   "region": "서울특별시"
-  },
-  {
-   "name": "경복궁",
-   "region": "서울특별시"
-  },
-  {
-   "name": "불국사",
-   "region": "경상북도 경주시"
-  },
-  {
-   "name": "전주한옥마을",
-   "region": "전북특별자치도 전주시"
-  },
-  {
-   "name": "여수 오동도",
-   "region": "전라남도 여수시"
-  },
-  {
-   "name": "을왕리해수욕장",
-   "region": "인천광역시"
-  },
-  {
-   "name": "남이섬",
-   "region": "강원특별자치도 춘천시"
-  }
- ],
- "spots": [
-  {
-   "name": "성산일출봉",
-   "area": "동쪽(성산)",
-   "indoor": false,
-   "type": "오름 · 바다"
-  },
-  {
-   "name": "섭지코지",
-   "area": "동쪽(성산)",
-   "indoor": false,
-   "type": "바다 · 산책"
-  },
-  {
-   "name": "아쿠아플라넷 제주",
-   "area": "동쪽(성산)",
-   "indoor": true,
-   "type": "아쿠아리움"
-  },
-  {
-   "name": "광치기해변",
-   "area": "동쪽(성산)",
-   "indoor": false,
-   "type": "바다"
-  },
-  {
-   "name": "빛의 벙커",
-   "area": "동쪽(성산)",
-   "indoor": true,
-   "type": "전시"
-  },
-  {
-   "name": "유민미술관",
-   "area": "동쪽(성산)",
-   "indoor": true,
-   "type": "미술관"
-  },
-  {
-   "name": "신양섭지해수욕장",
-   "area": "동쪽(성산)",
-   "indoor": false,
-   "type": "바다"
-  },
-  {
-   "name": "혼인지",
-   "area": "동쪽(성산)",
-   "indoor": false,
-   "type": "유적 · 산책"
-  },
-  {
-   "name": "오조리 해안",
-   "area": "동쪽(성산)",
-   "indoor": false,
-   "type": "바다 · 산책"
-  },
-  {
-   "name": "식산봉",
-   "area": "동쪽(성산)",
-   "indoor": false,
-   "type": "오름"
-  },
-  {
-   "name": "대수산봉",
-   "area": "동쪽(성산)",
-   "indoor": false,
-   "type": "오름"
-  },
-  {
-   "name": "독자봉",
-   "area": "동쪽(성산)",
-   "indoor": false,
-   "type": "오름"
-  },
-  {
-   "name": "두산봉(말미오름)",
-   "area": "동쪽(성산)",
-   "indoor": false,
-   "type": "오름"
-  },
-  {
-   "name": "김영갑갤러리 두모악",
-   "area": "동쪽(성산)",
-   "indoor": true,
-   "type": "미술관"
-  },
-  {
-   "name": "일출랜드 미천굴",
-   "area": "동쪽(성산)",
-   "indoor": false,
-   "type": "정원 · 동굴"
-  },
-  {
-   "name": "신천목장",
-   "area": "동쪽(성산)",
-   "indoor": false,
-   "type": "목장 · 바다"
-  },
-  {
-   "name": "신풍·신천 바다목장",
-   "area": "동쪽(성산)",
-   "indoor": false,
-   "type": "바다 · 산책"
-  },
-  {
-   "name": "성산항",
-   "area": "동쪽(성산)",
-   "indoor": false,
-   "type": "항구"
-  },
-  {
-   "name": "온평포구",
-   "area": "동쪽(성산)",
-   "indoor": false,
-   "type": "포구"
-  },
-  {
-   "name": "신양포구",
-   "area": "동쪽(성산)",
-   "indoor": false,
-   "type": "포구"
-  },
-  {
-   "name": "오조포구",
-   "area": "동쪽(성산)",
-   "indoor": false,
-   "type": "포구"
-  },
-  {
-   "name": "신산포구",
-   "area": "동쪽(성산)",
-   "indoor": false,
-   "type": "포구"
-  },
-  {
-   "name": "수마포구",
-   "area": "동쪽(성산)",
-   "indoor": false,
-   "type": "포구"
-  },
-  {
-   "name": "우뭇개해안",
-   "area": "동쪽(성산)",
-   "indoor": false,
-   "type": "바다"
-  },
-  {
-   "name": "성산 터진목 4·3유적지",
-   "area": "동쪽(성산)",
-   "indoor": false,
-   "type": "기념공원"
-  },
-  {
-   "name": "온평리 환해장성",
-   "area": "동쪽(성산)",
-   "indoor": false,
-   "type": "유적"
-  },
-  {
-   "name": "수산진성",
-   "area": "동쪽(성산)",
-   "indoor": false,
-   "type": "유적"
-  },
-  {
-   "name": "시흥리 해안",
-   "area": "동쪽(성산)",
-   "indoor": false,
-   "type": "바다 · 산책"
-  },
-  {
-   "name": "제주올레 1코스(시흥~광치기)",
-   "area": "동쪽(성산)",
-   "indoor": false,
-   "type": "올레길"
-  },
-  {
-   "name": "제주올레 2코스(광치기~온평)",
-   "area": "동쪽(성산)",
-   "indoor": false,
-   "type": "올레길"
-  },
-  {
-   "name": "제주올레 3코스(온평~표선)",
-   "area": "동쪽(성산)",
-   "indoor": false,
-   "type": "올레길"
-  },
-  {
-   "name": "휘닉스 제주 섭지코지",
-   "area": "동쪽(성산)",
-   "indoor": true,
-   "type": "리조트"
-  },
-  {
-   "name": "난산리 마을",
-   "area": "동쪽(성산)",
-   "indoor": false,
-   "type": "마을"
-  },
-  {
-   "name": "삼달리 마을",
-   "area": "동쪽(성산)",
-   "indoor": false,
-   "type": "마을"
-  },
-  {
-   "name": "오조리 마을",
-   "area": "동쪽(성산)",
-   "indoor": false,
-   "type": "마을"
-  },
-  {
-   "name": "만장굴",
-   "area": "동쪽(구좌)",
-   "indoor": true,
-   "type": "용암동굴"
-  },
-  {
-   "name": "비자림",
-   "area": "동쪽(구좌)",
-   "indoor": false,
-   "type": "숲"
-  },
-  {
-   "name": "김녕해수욕장",
-   "area": "동쪽(구좌)",
-   "indoor": false,
-   "type": "바다"
-  },
-  {
-   "name": "월정리해변",
-   "area": "동쪽(구좌)",
-   "indoor": false,
-   "type": "바다 · 카페거리"
-  },
-  {
-   "name": "세화해변",
-   "area": "동쪽(구좌)",
-   "indoor": false,
-   "type": "바다"
-  },
-  {
-   "name": "평대리해변",
-   "area": "동쪽(구좌)",
-   "indoor": false,
-   "type": "바다"
-  },
-  {
-   "name": "하도해변",
-   "area": "동쪽(구좌)",
-   "indoor": false,
-   "type": "바다"
-  },
-  {
-   "name": "종달리 해안도로",
-   "area": "동쪽(구좌)",
-   "indoor": false,
-   "type": "해안도로"
-  },
-  {
-   "name": "다랑쉬오름",
-   "area": "동쪽(구좌)",
-   "indoor": false,
-   "type": "오름"
-  },
-  {
-   "name": "아끈다랑쉬오름",
-   "area": "동쪽(구좌)",
-   "indoor": false,
-   "type": "오름"
-  },
-  {
-   "name": "용눈이오름",
-   "area": "동쪽(구좌)",
-   "indoor": false,
-   "type": "오름"
-  },
-  {
-   "name": "아부오름",
-   "area": "동쪽(구좌)",
-   "indoor": false,
-   "type": "오름"
-  },
-  {
-   "name": "지미봉",
-   "area": "동쪽(구좌)",
-   "indoor": false,
-   "type": "오름"
-  },
-  {
-   "name": "높은오름",
-   "area": "동쪽(구좌)",
-   "indoor": false,
-   "type": "오름"
-  },
-  {
-   "name": "동검은이오름",
-   "area": "동쪽(구좌)",
-   "indoor": false,
-   "type": "오름"
-  },
-  {
-   "name": "체오름",
-   "area": "동쪽(구좌)",
-   "indoor": false,
-   "type": "오름"
-  },
-  {
-   "name": "안돌오름",
-   "area": "동쪽(구좌)",
-   "indoor": false,
-   "type": "오름"
-  },
-  {
-   "name": "밧돌오름",
-   "area": "동쪽(구좌)",
-   "indoor": false,
-   "type": "오름"
-  },
-  {
-   "name": "거슨새미오름",
-   "area": "동쪽(구좌)",
-   "indoor": false,
-   "type": "오름"
-  },
-  {
-   "name": "당오름(송당)",
-   "area": "동쪽(구좌)",
-   "indoor": false,
-   "type": "오름"
-  },
-  {
-   "name": "민오름(송당)",
-   "area": "동쪽(구좌)",
-   "indoor": false,
-   "type": "오름"
-  },
-  {
-   "name": "둔지오름",
-   "area": "동쪽(구좌)",
-   "indoor": false,
-   "type": "오름"
-  },
-  {
-   "name": "돝오름",
-   "area": "동쪽(구좌)",
-   "indoor": false,
-   "type": "오름"
-  },
-  {
-   "name": "입산봉",
-   "area": "동쪽(구좌)",
-   "indoor": false,
-   "type": "오름"
-  },
-  {
-   "name": "제주해녀박물관",
-   "area": "동쪽(구좌)",
-   "indoor": true,
-   "type": "박물관"
-  },
-  {
-   "name": "메이즈랜드",
-   "area": "동쪽(구좌)",
-   "indoor": false,
-   "type": "미로공원"
-  },
-  {
-   "name": "김녕미로공원",
-   "area": "동쪽(구좌)",
-   "indoor": false,
-   "type": "미로공원"
-  },
-  {
-   "name": "스누피가든",
-   "area": "동쪽(구좌)",
-   "indoor": false,
-   "type": "테마정원"
-  },
-  {
-   "name": "제주레일바이크",
-   "area": "동쪽(구좌)",
-   "indoor": false,
-   "type": "체험"
-  },
-  {
-   "name": "별방진",
-   "area": "동쪽(구좌)",
-   "indoor": false,
-   "type": "유적"
-  },
-  {
-   "name": "하도리 철새도래지",
-   "area": "동쪽(구좌)",
-   "indoor": false,
-   "type": "생태"
-  },
-  {
-   "name": "토끼섬 문주란 자생지",
-   "area": "동쪽(구좌)",
-   "indoor": false,
-   "type": "생태"
-  },
-  {
-   "name": "행원포구",
-   "area": "동쪽(구좌)",
-   "indoor": false,
-   "type": "포구"
-  },
-  {
-   "name": "세화포구",
-   "area": "동쪽(구좌)",
-   "indoor": false,
-   "type": "포구"
-  },
-  {
-   "name": "김녕항",
-   "area": "동쪽(구좌)",
-   "indoor": false,
-   "type": "항구"
-  },
-  {
-   "name": "행원 풍력발전단지",
-   "area": "동쪽(구좌)",
-   "indoor": false,
-   "type": "풍경"
-  },
-  {
-   "name": "세화민속오일시장",
-   "area": "동쪽(구좌)",
-   "indoor": false,
-   "type": "시장"
-  },
-  {
-   "name": "송당 본향당",
-   "area": "동쪽(구좌)",
-   "indoor": false,
-   "type": "유적"
-  },
-  {
-   "name": "송당리 마을",
-   "area": "동쪽(구좌)",
-   "indoor": false,
-   "type": "마을"
-  },
-  {
-   "name": "종달리 마을",
-   "area": "동쪽(구좌)",
-   "indoor": false,
-   "type": "마을"
-  },
-  {
-   "name": "평대리 마을",
-   "area": "동쪽(구좌)",
-   "indoor": false,
-   "type": "마을"
-  },
-  {
-   "name": "한동리 해안",
-   "area": "동쪽(구좌)",
-   "indoor": false,
-   "type": "바다 · 산책"
-  },
-  {
-   "name": "김녕 해안마을",
-   "area": "동쪽(구좌)",
-   "indoor": false,
-   "type": "마을"
-  },
-  {
-   "name": "제주올레 20코스(김녕~하도)",
-   "area": "동쪽(구좌)",
-   "indoor": false,
-   "type": "올레길"
-  },
-  {
-   "name": "제주올레 21코스(하도~종달)",
-   "area": "동쪽(구좌)",
-   "indoor": false,
-   "type": "올레길"
-  },
-  {
-   "name": "동문재래시장",
-   "area": "제주시",
-   "indoor": true,
-   "type": "시장"
-  },
-  {
-   "name": "국립제주박물관",
-   "area": "제주시",
-   "indoor": true,
-   "type": "박물관"
-  },
-  {
-   "name": "제주특별자치도 민속자연사박물관",
-   "area": "제주시",
-   "indoor": true,
-   "type": "박물관"
-  },
-  {
-   "name": "한라수목원",
-   "area": "제주시",
-   "indoor": false,
-   "type": "숲 · 산책"
-  },
-  {
-   "name": "용두암",
-   "area": "제주시",
-   "indoor": false,
-   "type": "바다 · 기암"
-  },
-  {
-   "name": "용연구름다리",
-   "area": "제주시",
-   "indoor": false,
-   "type": "산책"
-  },
-  {
-   "name": "이호테우해변",
-   "area": "제주시",
-   "indoor": false,
-   "type": "바다"
-  },
-  {
-   "name": "도두봉",
-   "area": "제주시",
-   "indoor": false,
-   "type": "오름"
-  },
-  {
-   "name": "도두항",
-   "area": "제주시",
-   "indoor": false,
-   "type": "항구"
-  },
-  {
-   "name": "도두 무지개해안도로",
-   "area": "제주시",
-   "indoor": false,
-   "type": "해안도로"
-  },
-  {
-   "name": "사라봉",
-   "area": "제주시",
-   "indoor": false,
-   "type": "오름 · 산책"
-  },
-  {
-   "name": "별도봉",
-   "area": "제주시",
-   "indoor": false,
-   "type": "오름 · 산책"
-  },
-  {
-   "name": "삼양검은모래해변",
-   "area": "제주시",
-   "indoor": false,
-   "type": "바다"
-  },
-  {
-   "name": "원당봉",
-   "area": "제주시",
-   "indoor": false,
-   "type": "오름"
-  },
-  {
-   "name": "불탑사 오층석탑",
-   "area": "제주시",
-   "indoor": false,
-   "type": "유적"
-  },
-  {
-   "name": "화북포구",
-   "area": "제주시",
-   "indoor": false,
-   "type": "포구"
-  },
-  {
-   "name": "제주목관아",
-   "area": "제주시",
-   "indoor": false,
-   "type": "유적"
-  },
-  {
-   "name": "관덕정",
-   "area": "제주시",
-   "indoor": false,
-   "type": "유적"
-  },
-  {
-   "name": "삼성혈",
-   "area": "제주시",
-   "indoor": false,
-   "type": "유적"
-  },
-  {
-   "name": "오현단",
-   "area": "제주시",
-   "indoor": false,
-   "type": "유적"
-  },
-  {
-   "name": "제주향교",
-   "area": "제주시",
-   "indoor": false,
-   "type": "유적"
-  },
-  {
-   "name": "제주성지",
-   "area": "제주시",
-   "indoor": false,
-   "type": "유적"
-  },
-  {
-   "name": "산지천",
-   "area": "제주시",
-   "indoor": false,
-   "type": "산책"
-  },
-  {
-   "name": "탑동광장",
-   "area": "제주시",
-   "indoor": false,
-   "type": "바다 · 광장"
-  },
-  {
-   "name": "아라리오뮤지엄 탑동시네마",
-   "area": "제주시",
-   "indoor": true,
-   "type": "미술관"
-  },
-  {
-   "name": "칠성로 쇼핑거리",
-   "area": "제주시",
-   "indoor": false,
-   "type": "쇼핑"
-  },
-  {
-   "name": "누웨마루거리",
-   "area": "제주시",
-   "indoor": false,
-   "type": "쇼핑 · 음식"
-  },
-  {
-   "name": "제주민속오일시장",
-   "area": "제주시",
-   "indoor": false,
-   "type": "시장"
-  },
-  {
-   "name": "넥슨컴퓨터박물관",
-   "area": "제주시",
-   "indoor": true,
-   "type": "박물관"
-  },
-  {
-   "name": "제주도립미술관",
-   "area": "제주시",
-   "indoor": true,
-   "type": "미술관"
-  },
-  {
-   "name": "신비의 도로(도깨비도로)",
-   "area": "제주시",
-   "indoor": false,
-   "type": "도로"
-  },
-  {
-   "name": "신산공원",
-   "area": "제주시",
-   "indoor": false,
-   "type": "공원"
-  },
-  {
-   "name": "별빛누리공원",
-   "area": "제주시",
-   "indoor": true,
-   "type": "천문대"
-  },
-  {
-   "name": "방선문",
-   "area": "제주시",
-   "indoor": false,
-   "type": "계곡"
-  },
-  {
-   "name": "산천단",
-   "area": "제주시",
-   "indoor": false,
-   "type": "유적"
-  },
-  {
-   "name": "민오름(오라)",
-   "area": "제주시",
-   "indoor": false,
-   "type": "오름"
-  },
-  {
-   "name": "제주4·3평화공원",
-   "area": "제주시",
-   "indoor": false,
-   "type": "기념공원"
-  },
-  {
-   "name": "절물자연휴양림",
-   "area": "제주시",
-   "indoor": false,
-   "type": "숲"
-  },
-  {
-   "name": "한라생태숲",
-   "area": "제주시",
-   "indoor": false,
-   "type": "숲"
-  },
-  {
-   "name": "어승생악",
-   "area": "제주시",
-   "indoor": false,
-   "type": "오름"
-  },
-  {
-   "name": "한라산 어리목코스",
-   "area": "제주시",
-   "indoor": false,
-   "type": "산 · 등산"
-  },
-  {
-   "name": "한라산 관음사코스",
-   "area": "제주시",
-   "indoor": false,
-   "type": "산 · 등산"
-  },
-  {
-   "name": "관음사",
-   "area": "제주시",
-   "indoor": false,
-   "type": "사찰"
-  },
-  {
-   "name": "한라산 성판악코스",
-   "area": "제주시",
-   "indoor": false,
-   "type": "산 · 등산"
-  },
-  {
-   "name": "함덕해수욕장",
-   "area": "제주시",
-   "indoor": false,
-   "type": "바다"
-  },
-  {
-   "name": "서우봉",
-   "area": "제주시",
-   "indoor": false,
-   "type": "오름"
-  },
-  {
-   "name": "연북정",
-   "area": "제주시",
-   "indoor": false,
-   "type": "유적"
-  },
-  {
-   "name": "제주항일기념관",
-   "area": "제주시",
-   "indoor": true,
-   "type": "기념관"
-  },
-  {
-   "name": "너븐숭이 4·3기념관",
-   "area": "제주시",
-   "indoor": true,
-   "type": "기념관"
-  },
-  {
-   "name": "동백동산",
-   "area": "제주시",
-   "indoor": false,
-   "type": "숲 · 습지"
-  },
-  {
-   "name": "에코랜드",
-   "area": "제주시",
-   "indoor": false,
-   "type": "숲 · 테마파크"
-  },
-  {
-   "name": "거문오름",
-   "area": "제주시",
-   "indoor": false,
-   "type": "오름"
-  },
-  {
-   "name": "산굼부리",
-   "area": "제주시",
-   "indoor": false,
-   "type": "분화구"
-  },
-  {
-   "name": "사려니숲길",
-   "area": "제주시",
-   "indoor": false,
-   "type": "숲 · 산책"
-  },
-  {
-   "name": "교래자연휴양림",
-   "area": "제주시",
-   "indoor": false,
-   "type": "숲"
-  },
-  {
-   "name": "제주돌문화공원",
-   "area": "제주시",
-   "indoor": false,
-   "type": "공원 · 박물관"
-  },
-  {
-   "name": "삼다수숲길",
-   "area": "제주시",
-   "indoor": false,
-   "type": "숲 · 산책"
-  },
-  {
-   "name": "곽지해수욕장",
-   "area": "제주시",
-   "indoor": false,
-   "type": "바다"
-  },
-  {
-   "name": "한담해안산책로",
-   "area": "제주시",
-   "indoor": false,
-   "type": "바다 · 산책"
-  },
-  {
-   "name": "애월해안도로",
-   "area": "제주시",
-   "indoor": false,
-   "type": "해안도로"
-  },
-  {
-   "name": "구엄리 돌염전",
-   "area": "제주시",
-   "indoor": false,
-   "type": "바다 · 유적"
-  },
-  {
-   "name": "고내포구",
-   "area": "제주시",
-   "indoor": false,
-   "type": "포구"
-  },
-  {
-   "name": "애월항",
-   "area": "제주시",
-   "indoor": false,
-   "type": "항구"
-  },
-  {
-   "name": "새별오름",
-   "area": "제주시",
-   "indoor": false,
-   "type": "오름"
-  },
-  {
-   "name": "수산봉",
-   "area": "제주시",
-   "indoor": false,
-   "type": "오름"
-  },
-  {
-   "name": "수산저수지",
-   "area": "제주시",
-   "indoor": false,
-   "type": "호수"
-  },
-  {
-   "name": "항파두리 항몽유적지",
-   "area": "제주시",
-   "indoor": false,
-   "type": "유적"
-  },
-  {
-   "name": "납읍 금산공원",
-   "area": "제주시",
-   "indoor": false,
-   "type": "숲"
-  },
-  {
-   "name": "노꼬메오름",
-   "area": "제주시",
-   "indoor": false,
-   "type": "오름"
-  },
-  {
-   "name": "바리메오름",
-   "area": "제주시",
-   "indoor": false,
-   "type": "오름"
-  },
-  {
-   "name": "궷물오름",
-   "area": "제주시",
-   "indoor": false,
-   "type": "오름"
-  },
-  {
-   "name": "9.81파크",
-   "area": "제주시",
-   "indoor": false,
-   "type": "체험"
-  },
-  {
-   "name": "아르떼뮤지엄 제주",
-   "area": "제주시",
-   "indoor": true,
-   "type": "전시"
-  },
-  {
-   "name": "수월봉",
-   "area": "제주시",
-   "indoor": false,
-   "type": "오름 · 지질"
-  },
-  {
-   "name": "엉알해안",
-   "area": "제주시",
-   "indoor": false,
-   "type": "바다 · 지질"
-  },
-  {
-   "name": "차귀도",
-   "area": "제주시",
-   "indoor": false,
-   "type": "섬"
-  },
-  {
-   "name": "자구내포구",
-   "area": "제주시",
-   "indoor": false,
-   "type": "포구"
-  },
-  {
-   "name": "당산봉",
-   "area": "제주시",
-   "indoor": false,
-   "type": "오름"
-  },
-  {
-   "name": "고산리 유적",
-   "area": "제주시",
-   "indoor": false,
-   "type": "유적"
-  },
-  {
-   "name": "신창풍차해안도로",
-   "area": "제주시",
-   "indoor": false,
-   "type": "해안도로"
-  },
-  {
-   "name": "싱계물공원",
-   "area": "제주시",
-   "indoor": false,
-   "type": "바다 · 공원"
-  },
-  {
-   "name": "판포포구",
-   "area": "제주시",
-   "indoor": false,
-   "type": "포구"
-  },
-  {
-   "name": "용수포구",
-   "area": "제주시",
-   "indoor": false,
-   "type": "포구"
-  },
-  {
-   "name": "절부암",
-   "area": "제주시",
-   "indoor": false,
-   "type": "유적"
-  },
-  {
-   "name": "저지오름",
-   "area": "제주시",
-   "indoor": false,
-   "type": "오름"
-  },
-  {
-   "name": "제주현대미술관",
-   "area": "제주시",
-   "indoor": true,
-   "type": "미술관"
-  },
-  {
-   "name": "저지문화예술인마을",
-   "area": "제주시",
-   "indoor": false,
-   "type": "마을 · 예술"
-  },
-  {
-   "name": "생각하는 정원",
-   "area": "제주시",
-   "indoor": false,
-   "type": "정원"
-  },
-  {
-   "name": "환상숲곶자왈공원",
-   "area": "제주시",
-   "indoor": false,
-   "type": "숲"
-  },
-  {
-   "name": "낙천리 아홉굿마을",
-   "area": "제주시",
-   "indoor": false,
-   "type": "마을"
-  },
-  {
-   "name": "유리의 성",
-   "area": "제주시",
-   "indoor": true,
-   "type": "전시"
-  },
-  {
-   "name": "우도",
-   "area": "제주시",
-   "indoor": false,
-   "type": "섬"
-  },
-  {
-   "name": "우도봉",
-   "area": "제주시",
-   "indoor": false,
-   "type": "오름"
-  },
-  {
-   "name": "서빈백사(홍조단괴해빈)",
-   "area": "제주시",
-   "indoor": false,
-   "type": "바다"
-  },
-  {
-   "name": "하고수동해수욕장",
-   "area": "제주시",
-   "indoor": false,
-   "type": "바다"
-  },
-  {
-   "name": "검멀레해변",
-   "area": "제주시",
-   "indoor": false,
-   "type": "바다"
-  },
-  {
-   "name": "우도 등대공원",
-   "area": "제주시",
-   "indoor": false,
-   "type": "공원"
-  },
-  {
-   "name": "추자도",
-   "area": "제주시",
-   "indoor": false,
-   "type": "섬"
-  },
-  {
-   "name": "제주올레 17코스(광령~산지천)",
-   "area": "제주시",
-   "indoor": false,
-   "type": "올레길"
-  },
-  {
-   "name": "제주올레 18코스(산지천~조천)",
-   "area": "제주시",
-   "indoor": false,
-   "type": "올레길"
-  },
-  {
-   "name": "제주올레 19코스(조천~김녕)",
-   "area": "제주시",
-   "indoor": false,
-   "type": "올레길"
-  },
-  {
-   "name": "제주올레 16코스(고내~광령)",
-   "area": "제주시",
-   "indoor": false,
-   "type": "올레길"
-  },
-  {
-   "name": "제주올레 13코스(용수~저지)",
-   "area": "제주시",
-   "indoor": false,
-   "type": "올레길"
-  },
-  {
-   "name": "제주올레 12코스(무릉~용수)",
-   "area": "제주시",
-   "indoor": false,
-   "type": "올레길"
-  },
-  {
-   "name": "협재해수욕장",
-   "area": "서쪽(한림)",
-   "indoor": false,
-   "type": "바다"
-  },
-  {
-   "name": "금능해수욕장",
-   "area": "서쪽(한림)",
-   "indoor": false,
-   "type": "바다"
-  },
-  {
-   "name": "한림공원",
-   "area": "서쪽(한림)",
-   "indoor": false,
-   "type": "정원 · 동굴"
-  },
-  {
-   "name": "비양도",
-   "area": "서쪽(한림)",
-   "indoor": false,
-   "type": "섬"
-  },
-  {
-   "name": "비양봉",
-   "area": "서쪽(한림)",
-   "indoor": false,
-   "type": "오름"
-  },
-  {
-   "name": "금오름",
-   "area": "서쪽(한림)",
-   "indoor": false,
-   "type": "오름"
-  },
-  {
-   "name": "정물오름",
-   "area": "서쪽(한림)",
-   "indoor": false,
-   "type": "오름"
-  },
-  {
-   "name": "느지리오름",
-   "area": "서쪽(한림)",
-   "indoor": false,
-   "type": "오름"
-  },
-  {
-   "name": "성이시돌목장",
-   "area": "서쪽(한림)",
-   "indoor": false,
-   "type": "목장"
-  },
-  {
-   "name": "새미은총의동산",
-   "area": "서쪽(한림)",
-   "indoor": false,
-   "type": "산책"
-  },
-  {
-   "name": "월령리 선인장군락지",
-   "area": "서쪽(한림)",
-   "indoor": false,
-   "type": "바다 · 산책"
-  },
-  {
-   "name": "한림항",
-   "area": "서쪽(한림)",
-   "indoor": false,
-   "type": "항구"
-  },
-  {
-   "name": "옹포포구",
-   "area": "서쪽(한림)",
-   "indoor": false,
-   "type": "포구"
-  },
-  {
-   "name": "한림민속오일시장",
-   "area": "서쪽(한림)",
-   "indoor": false,
-   "type": "시장"
-  },
-  {
-   "name": "금능석물원",
-   "area": "서쪽(한림)",
-   "indoor": false,
-   "type": "정원"
-  },
-  {
-   "name": "명월대",
-   "area": "서쪽(한림)",
-   "indoor": false,
-   "type": "유적"
-  },
-  {
-   "name": "명월성지",
-   "area": "서쪽(한림)",
-   "indoor": false,
-   "type": "유적"
-  },
-  {
-   "name": "더마파크",
-   "area": "서쪽(한림)",
-   "indoor": false,
-   "type": "체험"
-  },
-  {
-   "name": "한림 해안도로",
-   "area": "서쪽(한림)",
-   "indoor": false,
-   "type": "해안도로"
-  },
-  {
-   "name": "귀덕리 해안",
-   "area": "서쪽(한림)",
-   "indoor": false,
-   "type": "바다 · 산책"
-  },
-  {
-   "name": "제주올레 14코스(저지~한림)",
-   "area": "서쪽(한림)",
-   "indoor": false,
-   "type": "올레길"
-  },
-  {
-   "name": "제주올레 15코스(한림~고내)",
-   "area": "서쪽(한림)",
-   "indoor": false,
-   "type": "올레길"
-  },
-  {
-   "name": "협재리 마을",
-   "area": "서쪽(한림)",
-   "indoor": false,
-   "type": "마을"
-  },
-  {
-   "name": "명월리 마을",
-   "area": "서쪽(한림)",
-   "indoor": false,
-   "type": "마을"
-  },
-  {
-   "name": "오설록 티 뮤지엄",
-   "area": "서쪽(안덕)",
-   "indoor": true,
-   "type": "전시 · 카페"
-  },
-  {
-   "name": "서광다원 차밭",
-   "area": "서쪽(안덕)",
-   "indoor": false,
-   "type": "차밭"
-  },
-  {
-   "name": "이니스프리 제주하우스",
-   "area": "서쪽(안덕)",
-   "indoor": true,
-   "type": "전시 · 카페"
-  },
-  {
-   "name": "산방산",
-   "area": "서쪽(안덕)",
-   "indoor": false,
-   "type": "산"
-  },
-  {
-   "name": "산방굴사",
-   "area": "서쪽(안덕)",
-   "indoor": false,
-   "type": "사찰"
-  },
-  {
-   "name": "산방산 탄산온천",
-   "area": "서쪽(안덕)",
-   "indoor": true,
-   "type": "온천"
-  },
-  {
-   "name": "용머리해안",
-   "area": "서쪽(안덕)",
-   "indoor": false,
-   "type": "바다 · 지질"
-  },
-  {
-   "name": "하멜상선전시관",
-   "area": "서쪽(안덕)",
-   "indoor": true,
-   "type": "전시"
-  },
-  {
-   "name": "사계해변",
-   "area": "서쪽(안덕)",
-   "indoor": false,
-   "type": "바다"
-  },
-  {
-   "name": "사계포구",
-   "area": "서쪽(안덕)",
-   "indoor": false,
-   "type": "포구"
-  },
-  {
-   "name": "형제섬",
-   "area": "서쪽(안덕)",
-   "indoor": false,
-   "type": "섬"
-  },
-  {
-   "name": "사계리 사람발자국 화석지",
-   "area": "서쪽(안덕)",
-   "indoor": false,
-   "type": "지질"
-  },
-  {
-   "name": "화순금모래해변",
-   "area": "서쪽(안덕)",
-   "indoor": false,
-   "type": "바다"
-  },
-  {
-   "name": "화순항",
-   "area": "서쪽(안덕)",
-   "indoor": false,
-   "type": "항구"
-  },
-  {
-   "name": "화순곶자왈",
-   "area": "서쪽(안덕)",
-   "indoor": false,
-   "type": "숲"
-  },
-  {
-   "name": "박수기정",
-   "area": "서쪽(안덕)",
-   "indoor": false,
-   "type": "바다 · 절벽"
-  },
-  {
-   "name": "대평포구",
-   "area": "서쪽(안덕)",
-   "indoor": false,
-   "type": "포구"
-  },
-  {
-   "name": "대평리 마을",
-   "area": "서쪽(안덕)",
-   "indoor": false,
-   "type": "마을"
-  },
-  {
-   "name": "카멜리아힐",
-   "area": "서쪽(안덕)",
-   "indoor": false,
-   "type": "정원"
-  },
-  {
-   "name": "본태박물관",
-   "area": "서쪽(안덕)",
-   "indoor": true,
-   "type": "박물관"
-  },
-  {
-   "name": "방주교회",
-   "area": "서쪽(안덕)",
-   "indoor": false,
-   "type": "건축"
-  },
-  {
-   "name": "제주항공우주박물관",
-   "area": "서쪽(안덕)",
-   "indoor": true,
-   "type": "박물관"
-  },
-  {
-   "name": "소인국테마파크",
-   "area": "서쪽(안덕)",
-   "indoor": false,
-   "type": "테마파크"
-  },
-  {
-   "name": "제주신화월드",
-   "area": "서쪽(안덕)",
-   "indoor": true,
-   "type": "리조트 · 테마파크"
-  },
-  {
-   "name": "안덕계곡",
-   "area": "서쪽(안덕)",
-   "indoor": false,
-   "type": "계곡"
-  },
-  {
-   "name": "군산오름",
-   "area": "서쪽(안덕)",
-   "indoor": false,
-   "type": "오름"
-  },
-  {
-   "name": "왕이메오름",
-   "area": "서쪽(안덕)",
-   "indoor": false,
-   "type": "오름"
-  },
-  {
-   "name": "원물오름",
-   "area": "서쪽(안덕)",
-   "indoor": false,
-   "type": "오름"
-  },
-  {
-   "name": "도너리오름",
-   "area": "서쪽(안덕)",
-   "indoor": false,
-   "type": "오름"
-  },
-  {
-   "name": "동광 큰넓궤",
-   "area": "서쪽(안덕)",
-   "indoor": false,
-   "type": "유적"
-  },
-  {
-   "name": "덕수리 마을",
-   "area": "서쪽(안덕)",
-   "indoor": false,
-   "type": "마을"
-  },
-  {
-   "name": "제주올레 9코스(대평~화순)",
-   "area": "서쪽(안덕)",
-   "indoor": false,
-   "type": "올레길"
-  },
-  {
-   "name": "제주올레 10코스(화순~모슬포)",
-   "area": "서쪽(안덕)",
-   "indoor": false,
-   "type": "올레길"
-  },
-  {
-   "name": "외돌개",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "바다 · 산책"
-  },
-  {
-   "name": "황우지해안",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "바다"
-  },
-  {
-   "name": "삼매봉",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "오름"
-  },
-  {
-   "name": "천지연폭포",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "폭포"
-  },
-  {
-   "name": "정방폭포",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "폭포"
-  },
-  {
-   "name": "소정방폭포",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "폭포"
-  },
-  {
-   "name": "서복전시관",
-   "area": "서귀포",
-   "indoor": true,
-   "type": "전시"
-  },
-  {
-   "name": "천제연폭포",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "폭포"
-  },
-  {
-   "name": "엉또폭포",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "폭포"
-  },
-  {
-   "name": "쇠소깍",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "바다 · 계곡"
-  },
-  {
-   "name": "효돈천",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "계곡"
-  },
-  {
-   "name": "새연교 · 새섬",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "바다 · 산책"
-  },
-  {
-   "name": "서귀포항",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "항구"
-  },
-  {
-   "name": "문섬",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "섬"
-  },
-  {
-   "name": "섶섬",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "섬"
-  },
-  {
-   "name": "범섬",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "섬"
-  },
-  {
-   "name": "법환포구",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "포구"
-  },
-  {
-   "name": "보목포구",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "포구"
-  },
-  {
-   "name": "제지기오름",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "오름"
-  },
-  {
-   "name": "칠십리시공원",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "공원"
-  },
-  {
-   "name": "자구리공원",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "공원"
-  },
-  {
-   "name": "정모시공원",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "공원"
-  },
-  {
-   "name": "걸매생태공원",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "공원"
-  },
-  {
-   "name": "솜반천",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "계곡 · 산책"
-  },
-  {
-   "name": "하논분화구",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "분화구"
-  },
-  {
-   "name": "이중섭미술관",
-   "area": "서귀포",
-   "indoor": true,
-   "type": "미술관"
-  },
-  {
-   "name": "이중섭거리",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "거리 · 예술"
-  },
-  {
-   "name": "기당미술관",
-   "area": "서귀포",
-   "indoor": true,
-   "type": "미술관"
-  },
-  {
-   "name": "서귀포매일올레시장",
-   "area": "서귀포",
-   "indoor": true,
-   "type": "시장"
-  },
-  {
-   "name": "제주감귤박물관",
-   "area": "서귀포",
-   "indoor": true,
-   "type": "박물관"
-  },
-  {
-   "name": "고근산",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "오름"
-  },
-  {
-   "name": "제주월드컵경기장",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "경기장"
-  },
-  {
-   "name": "강정천",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "계곡"
-  },
-  {
-   "name": "약천사",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "사찰"
-  },
-  {
-   "name": "대포포구",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "포구"
-  },
-  {
-   "name": "중문 대포주상절리대",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "바다 · 지질"
-  },
-  {
-   "name": "중문관광단지",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "관광단지"
-  },
-  {
-   "name": "중문색달해수욕장",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "바다"
-  },
-  {
-   "name": "여미지식물원",
-   "area": "서귀포",
-   "indoor": true,
-   "type": "식물원"
-  },
-  {
-   "name": "테디베어뮤지엄",
-   "area": "서귀포",
-   "indoor": true,
-   "type": "박물관"
-  },
-  {
-   "name": "엉덩물계곡",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "계곡"
-  },
-  {
-   "name": "갯깍 주상절리",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "바다 · 지질"
-  },
-  {
-   "name": "논짓물",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "바다"
-  },
-  {
-   "name": "예래생태공원",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "공원"
-  },
-  {
-   "name": "베릿내오름",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "오름"
-  },
-  {
-   "name": "하원수로길",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "산책"
-  },
-  {
-   "name": "법화사",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "사찰"
-  },
-  {
-   "name": "존자암",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "사찰"
-  },
-  {
-   "name": "한라산 영실코스",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "산 · 등산"
-  },
-  {
-   "name": "한라산 돈내코코스",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "산 · 등산"
-  },
-  {
-   "name": "돈내코 원앙폭포",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "폭포 · 계곡"
-  },
-  {
-   "name": "1100고지 습지",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "습지"
-  },
-  {
-   "name": "서귀포자연휴양림",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "숲"
-  },
-  {
-   "name": "서귀포 치유의 숲",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "숲"
-  },
-  {
-   "name": "큰엉해안경승지",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "바다 · 산책"
-  },
-  {
-   "name": "위미 동백군락지",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "숲 · 산책"
-  },
-  {
-   "name": "위미항",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "항구"
-  },
-  {
-   "name": "남원포구",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "포구"
-  },
-  {
-   "name": "휴애리자연생활공원",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "테마공원"
-  },
-  {
-   "name": "물영아리오름",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "오름 · 습지"
-  },
-  {
-   "name": "머체왓숲길",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "숲 · 산책"
-  },
-  {
-   "name": "이승이오름",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "오름"
-  },
-  {
-   "name": "고살리숲길",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "숲 · 산책"
-  },
-  {
-   "name": "표선해수욕장",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "바다"
-  },
-  {
-   "name": "표선 당케포구",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "포구"
-  },
-  {
-   "name": "제주민속촌",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "민속마을"
-  },
-  {
-   "name": "성읍민속마을",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "민속마을"
-  },
-  {
-   "name": "영주산",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "오름"
-  },
-  {
-   "name": "백약이오름",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "오름"
-  },
-  {
-   "name": "따라비오름",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "오름"
-  },
-  {
-   "name": "큰사슴이오름",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "오름"
-  },
-  {
-   "name": "개오름",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "오름"
-  },
-  {
-   "name": "가시리 녹산로",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "도로 · 꽃길"
-  },
-  {
-   "name": "조랑말체험공원",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "체험"
-  },
-  {
-   "name": "갑마장길",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "산책"
-  },
-  {
-   "name": "붉은오름자연휴양림",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "숲"
-  },
-  {
-   "name": "제주허브동산",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "정원"
-  },
-  {
-   "name": "송악산",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "오름 · 바다"
-  },
-  {
-   "name": "섯알오름",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "오름 · 유적"
-  },
-  {
-   "name": "알뜨르비행장",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "유적"
-  },
-  {
-   "name": "마라도",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "섬"
-  },
-  {
-   "name": "가파도",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "섬"
-  },
-  {
-   "name": "모슬포항",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "항구"
-  },
-  {
-   "name": "모슬봉",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "오름"
-  },
-  {
-   "name": "대정오일시장",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "시장"
-  },
-  {
-   "name": "제주추사관",
-   "area": "서귀포",
-   "indoor": true,
-   "type": "기념관"
-  },
-  {
-   "name": "대정성지",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "유적"
-  },
-  {
-   "name": "제주곶자왈도립공원",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "숲"
-  },
-  {
-   "name": "하모해변",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "바다"
-  },
-  {
-   "name": "신도리 도구리알",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "바다"
-  },
-  {
-   "name": "노을해안로",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "해안도로"
-  },
-  {
-   "name": "영락리 해안",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "바다"
-  },
-  {
-   "name": "제주올레 4코스(표선~남원)",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "올레길"
-  },
-  {
-   "name": "제주올레 5코스(남원~쇠소깍)",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "올레길"
-  },
-  {
-   "name": "제주올레 6코스(쇠소깍~서귀포)",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "올레길"
-  },
-  {
-   "name": "제주올레 7코스(서귀포~월평)",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "올레길"
-  },
-  {
-   "name": "제주올레 8코스(월평~대평)",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "올레길"
-  },
-  {
-   "name": "제주올레 11코스(모슬포~무릉)",
-   "area": "서귀포",
-   "indoor": false,
-   "type": "올레길"
-  }
- ]
+    "region":  "제주특별자치도",
+    "note":  "강의용 관광지 목록 — 이름 · 지역 · 실내/야외 · 유형만 담았습니다. 운영시간 · 요금 · 휴무는 바뀌므로 넣지 않았습니다. 방문 전 공식 안내로 확인하세요. 이 목록은 제주특별자치도 안의 장소만 다룹니다.",
+    "area_rule":  "괄호 안은 읍면입니다(성산읍·구좌읍·한림읍·안덕면). 그 밖의 제주시 읍면(애월·조천·한경·우도·추자)은 \u0027제주시\u0027, 그 밖의 서귀포시 읍면(대정·남원·표선)은 \u0027서귀포\u0027로 분류했습니다.",
+    "areas":  [
+                  "동쪽(성산)",
+                  "동쪽(구좌)",
+                  "제주시",
+                  "서쪽(한림)",
+                  "서쪽(안덕)",
+                  "서귀포"
+              ],
+    "out_of_scope_examples":  [
+                                  {
+                                      "name":  "해운대해수욕장",
+                                      "region":  "부산광역시"
+                                  },
+                                  {
+                                      "name":  "광안리해수욕장",
+                                      "region":  "부산광역시"
+                                  },
+                                  {
+                                      "name":  "감천문화마을",
+                                      "region":  "부산광역시"
+                                  },
+                                  {
+                                      "name":  "경포해변",
+                                      "region":  "강원특별자치도 강릉시"
+                                  },
+                                  {
+                                      "name":  "설악산",
+                                      "region":  "강원특별자치도"
+                                  },
+                                  {
+                                      "name":  "남산서울타워",
+                                      "region":  "서울특별시"
+                                  },
+                                  {
+                                      "name":  "경복궁",
+                                      "region":  "서울특별시"
+                                  },
+                                  {
+                                      "name":  "불국사",
+                                      "region":  "경상북도 경주시"
+                                  },
+                                  {
+                                      "name":  "전주한옥마을",
+                                      "region":  "전북특별자치도 전주시"
+                                  },
+                                  {
+                                      "name":  "여수 오동도",
+                                      "region":  "전라남도 여수시"
+                                  },
+                                  {
+                                      "name":  "을왕리해수욕장",
+                                      "region":  "인천광역시"
+                                  },
+                                  {
+                                      "name":  "남이섬",
+                                      "region":  "강원특별자치도 춘천시"
+                                  }
+                              ],
+    "spots":  [
+                  {
+                      "name":  "성산일출봉",
+                      "area":  "동쪽(성산)",
+                      "indoor":  false,
+                      "type":  "오름 · 바다",
+                      "lat":  33.45913,
+                      "lon":  126.94054
+                  },
+                  {
+                      "name":  "섭지코지",
+                      "area":  "동쪽(성산)",
+                      "indoor":  false,
+                      "type":  "바다 · 산책",
+                      "lat":  33.42394,
+                      "lon":  126.93061
+                  },
+                  {
+                      "name":  "아쿠아플라넷 제주",
+                      "area":  "동쪽(성산)",
+                      "indoor":  true,
+                      "type":  "아쿠아리움",
+                      "lat":  33.43307,
+                      "lon":  126.92785
+                  },
+                  {
+                      "name":  "광치기해변",
+                      "area":  "동쪽(성산)",
+                      "indoor":  false,
+                      "type":  "바다",
+                      "lat":  33.45252,
+                      "lon":  126.92419
+                  },
+                  {
+                      "name":  "빛의 벙커",
+                      "area":  "동쪽(성산)",
+                      "indoor":  true,
+                      "type":  "전시",
+                      "lat":  33.43988,
+                      "lon":  126.89921
+                  },
+                  {
+                      "name":  "유민미술관",
+                      "area":  "동쪽(성산)",
+                      "indoor":  true,
+                      "type":  "미술관",
+                      "lat":  33.4292,
+                      "lon":  126.93223
+                  },
+                  {
+                      "name":  "신양섭지해수욕장",
+                      "area":  "동쪽(성산)",
+                      "indoor":  false,
+                      "type":  "바다",
+                      "lat":  33.4351,
+                      "lon":  126.92347
+                  },
+                  {
+                      "name":  "혼인지",
+                      "area":  "동쪽(성산)",
+                      "indoor":  false,
+                      "type":  "유적 · 산책",
+                      "lat":  33.4152,
+                      "lon":  126.89377
+                  },
+                  {
+                      "name":  "오조리 해안",
+                      "area":  "동쪽(성산)",
+                      "indoor":  false,
+                      "type":  "바다 · 산책",
+                      "lat":  33.46187,
+                      "lon":  126.93863
+                  },
+                  {
+                      "name":  "식산봉",
+                      "area":  "동쪽(성산)",
+                      "indoor":  false,
+                      "type":  "오름",
+                      "lat":  33.46568,
+                      "lon":  126.91994
+                  },
+                  {
+                      "name":  "대수산봉",
+                      "area":  "동쪽(성산)",
+                      "indoor":  false,
+                      "type":  "오름",
+                      "lat":  33.43968,
+                      "lon":  126.90165
+                  },
+                  {
+                      "name":  "독자봉",
+                      "area":  "동쪽(성산)",
+                      "indoor":  false,
+                      "type":  "오름",
+                      "lat":  33.38802,
+                      "lon":  126.85353
+                  },
+                  {
+                      "name":  "두산봉(말미오름)",
+                      "area":  "동쪽(성산)",
+                      "indoor":  false,
+                      "type":  "오름",
+                      "lat":  33.47712,
+                      "lon":  126.88739
+                  },
+                  {
+                      "name":  "김영갑갤러리 두모악",
+                      "area":  "동쪽(성산)",
+                      "indoor":  true,
+                      "type":  "미술관",
+                      "lat":  33.3719,
+                      "lon":  126.85414
+                  },
+                  {
+                      "name":  "일출랜드 미천굴",
+                      "area":  "동쪽(성산)",
+                      "indoor":  false,
+                      "type":  "정원 · 동굴",
+                      "lat":  33.38346,
+                      "lon":  126.84266
+                  },
+                  {
+                      "name":  "신천목장",
+                      "area":  "동쪽(성산)",
+                      "indoor":  false,
+                      "type":  "목장 · 바다",
+                      "lat":  33.35483,
+                      "lon":  126.86683
+                  },
+                  {
+                      "name":  "신풍·신천 바다목장",
+                      "area":  "동쪽(성산)",
+                      "indoor":  false,
+                      "type":  "바다 · 산책"
+                  },
+                  {
+                      "name":  "성산항",
+                      "area":  "동쪽(성산)",
+                      "indoor":  false,
+                      "type":  "항구",
+                      "lat":  33.47346,
+                      "lon":  126.93329
+                  },
+                  {
+                      "name":  "온평포구",
+                      "area":  "동쪽(성산)",
+                      "indoor":  false,
+                      "type":  "포구",
+                      "lat":  33.40482,
+                      "lon":  126.90422
+                  },
+                  {
+                      "name":  "신양포구",
+                      "area":  "동쪽(성산)",
+                      "indoor":  false,
+                      "type":  "포구",
+                      "lat":  33.43266,
+                      "lon":  126.91563
+                  },
+                  {
+                      "name":  "오조포구",
+                      "area":  "동쪽(성산)",
+                      "indoor":  false,
+                      "type":  "포구",
+                      "lat":  33.46325,
+                      "lon":  126.92103
+                  },
+                  {
+                      "name":  "신산포구",
+                      "area":  "동쪽(성산)",
+                      "indoor":  false,
+                      "type":  "포구",
+                      "lat":  33.38199,
+                      "lon":  126.88046
+                  },
+                  {
+                      "name":  "수마포구",
+                      "area":  "동쪽(성산)",
+                      "indoor":  false,
+                      "type":  "포구"
+                  },
+                  {
+                      "name":  "우뭇개해안",
+                      "area":  "동쪽(성산)",
+                      "indoor":  false,
+                      "type":  "바다",
+                      "lat":  33.46187,
+                      "lon":  126.93863
+                  },
+                  {
+                      "name":  "성산 터진목 4·3유적지",
+                      "area":  "동쪽(성산)",
+                      "indoor":  false,
+                      "type":  "기념공원"
+                  },
+                  {
+                      "name":  "온평리 환해장성",
+                      "area":  "동쪽(성산)",
+                      "indoor":  false,
+                      "type":  "유적",
+                      "lat":  33.41793,
+                      "lon":  126.9108
+                  },
+                  {
+                      "name":  "수산진성",
+                      "area":  "동쪽(성산)",
+                      "indoor":  false,
+                      "type":  "유적",
+                      "lat":  33.44689,
+                      "lon":  126.88583
+                  },
+                  {
+                      "name":  "시흥리 해안",
+                      "area":  "동쪽(성산)",
+                      "indoor":  false,
+                      "type":  "바다 · 산책",
+                      "lat":  33.4604,
+                      "lon":  126.93534
+                  },
+                  {
+                      "name":  "제주올레 1코스(시흥~광치기)",
+                      "area":  "동쪽(성산)",
+                      "indoor":  false,
+                      "type":  "올레길",
+                      "lat":  33.47858,
+                      "lon":  126.90615
+                  },
+                  {
+                      "name":  "제주올레 2코스(광치기~온평)",
+                      "area":  "동쪽(성산)",
+                      "indoor":  false,
+                      "type":  "올레길",
+                      "lat":  33.45002,
+                      "lon":  126.91029
+                  },
+                  {
+                      "name":  "제주올레 3코스(온평~표선)",
+                      "area":  "동쪽(성산)",
+                      "indoor":  false,
+                      "type":  "올레길",
+                      "lat":  33.3714,
+                      "lon":  126.86075
+                  },
+                  {
+                      "name":  "휘닉스 제주 섭지코지",
+                      "area":  "동쪽(성산)",
+                      "indoor":  true,
+                      "type":  "리조트",
+                      "lat":  33.43032,
+                      "lon":  126.92937
+                  },
+                  {
+                      "name":  "난산리 마을",
+                      "area":  "동쪽(성산)",
+                      "indoor":  false,
+                      "type":  "마을",
+                      "lat":  33.41668,
+                      "lon":  126.84505
+                  },
+                  {
+                      "name":  "삼달리 마을",
+                      "area":  "동쪽(성산)",
+                      "indoor":  false,
+                      "type":  "마을",
+                      "lat":  33.37421,
+                      "lon":  126.84744
+                  },
+                  {
+                      "name":  "오조리 마을",
+                      "area":  "동쪽(성산)",
+                      "indoor":  false,
+                      "type":  "마을",
+                      "lat":  33.4682,
+                      "lon":  126.92032
+                  },
+                  {
+                      "name":  "만장굴",
+                      "area":  "동쪽(구좌)",
+                      "indoor":  true,
+                      "type":  "용암동굴",
+                      "lat":  33.52838,
+                      "lon":  126.77162
+                  },
+                  {
+                      "name":  "비자림",
+                      "area":  "동쪽(구좌)",
+                      "indoor":  false,
+                      "type":  "숲",
+                      "lat":  33.49041,
+                      "lon":  126.80999
+                  },
+                  {
+                      "name":  "김녕해수욕장",
+                      "area":  "동쪽(구좌)",
+                      "indoor":  false,
+                      "type":  "바다",
+                      "lat":  33.55744,
+                      "lon":  126.75931
+                  },
+                  {
+                      "name":  "월정리해변",
+                      "area":  "동쪽(구좌)",
+                      "indoor":  false,
+                      "type":  "바다 · 카페거리",
+                      "lat":  33.55647,
+                      "lon":  126.79581
+                  },
+                  {
+                      "name":  "세화해변",
+                      "area":  "동쪽(구좌)",
+                      "indoor":  false,
+                      "type":  "바다",
+                      "lat":  33.52514,
+                      "lon":  126.86026
+                  },
+                  {
+                      "name":  "평대리해변",
+                      "area":  "동쪽(구좌)",
+                      "indoor":  false,
+                      "type":  "바다",
+                      "lat":  33.53353,
+                      "lon":  126.84086
+                  },
+                  {
+                      "name":  "하도해변",
+                      "area":  "동쪽(구좌)",
+                      "indoor":  false,
+                      "type":  "바다",
+                      "lat":  33.51306,
+                      "lon":  126.89923
+                  },
+                  {
+                      "name":  "종달리 해안도로",
+                      "area":  "동쪽(구좌)",
+                      "indoor":  false,
+                      "type":  "해안도로",
+                      "lat":  33.48261,
+                      "lon":  126.90174
+                  },
+                  {
+                      "name":  "다랑쉬오름",
+                      "area":  "동쪽(구좌)",
+                      "indoor":  false,
+                      "type":  "오름",
+                      "lat":  33.47769,
+                      "lon":  126.82154
+                  },
+                  {
+                      "name":  "아끈다랑쉬오름",
+                      "area":  "동쪽(구좌)",
+                      "indoor":  false,
+                      "type":  "오름",
+                      "lat":  33.47414,
+                      "lon":  126.83065
+                  },
+                  {
+                      "name":  "용눈이오름",
+                      "area":  "동쪽(구좌)",
+                      "indoor":  false,
+                      "type":  "오름",
+                      "lat":  33.45988,
+                      "lon":  126.83268
+                  },
+                  {
+                      "name":  "아부오름",
+                      "area":  "동쪽(구좌)",
+                      "indoor":  false,
+                      "type":  "오름",
+                      "lat":  33.44858,
+                      "lon":  126.77721
+                  },
+                  {
+                      "name":  "지미봉",
+                      "area":  "동쪽(구좌)",
+                      "indoor":  false,
+                      "type":  "오름",
+                      "lat":  33.49931,
+                      "lon":  126.90244
+                  },
+                  {
+                      "name":  "높은오름",
+                      "area":  "동쪽(구좌)",
+                      "indoor":  false,
+                      "type":  "오름",
+                      "lat":  33.45641,
+                      "lon":  126.79307
+                  },
+                  {
+                      "name":  "동검은이오름",
+                      "area":  "동쪽(구좌)",
+                      "indoor":  false,
+                      "type":  "오름",
+                      "lat":  33.44894,
+                      "lon":  126.80367
+                  },
+                  {
+                      "name":  "체오름",
+                      "area":  "동쪽(구좌)",
+                      "indoor":  false,
+                      "type":  "오름",
+                      "lat":  33.46566,
+                      "lon":  126.74944
+                  },
+                  {
+                      "name":  "안돌오름",
+                      "area":  "동쪽(구좌)",
+                      "indoor":  false,
+                      "type":  "오름",
+                      "lat":  33.45783,
+                      "lon":  126.75587
+                  },
+                  {
+                      "name":  "밧돌오름",
+                      "area":  "동쪽(구좌)",
+                      "indoor":  false,
+                      "type":  "오름",
+                      "lat":  33.46071,
+                      "lon":  126.76007
+                  },
+                  {
+                      "name":  "거슨새미오름",
+                      "area":  "동쪽(구좌)",
+                      "indoor":  false,
+                      "type":  "오름",
+                      "lat":  33.45023,
+                      "lon":  126.76013
+                  },
+                  {
+                      "name":  "당오름(송당)",
+                      "area":  "동쪽(구좌)",
+                      "indoor":  false,
+                      "type":  "오름",
+                      "lat":  33.4666,
+                      "lon":  126.7786
+                  },
+                  {
+                      "name":  "민오름(송당)",
+                      "area":  "동쪽(구좌)",
+                      "indoor":  false,
+                      "type":  "오름",
+                      "lat":  33.43633,
+                      "lon":  126.7628
+                  },
+                  {
+                      "name":  "둔지오름",
+                      "area":  "동쪽(구좌)",
+                      "indoor":  false,
+                      "type":  "오름",
+                      "lat":  33.50274,
+                      "lon":  126.7954
+                  },
+                  {
+                      "name":  "돝오름",
+                      "area":  "동쪽(구좌)",
+                      "indoor":  false,
+                      "type":  "오름",
+                      "lat":  33.48108,
+                      "lon":  126.8015
+                  },
+                  {
+                      "name":  "입산봉",
+                      "area":  "동쪽(구좌)",
+                      "indoor":  false,
+                      "type":  "오름",
+                      "lat":  33.54757,
+                      "lon":  126.7582
+                  },
+                  {
+                      "name":  "제주해녀박물관",
+                      "area":  "동쪽(구좌)",
+                      "indoor":  true,
+                      "type":  "박물관",
+                      "lat":  33.52358,
+                      "lon":  126.86343
+                  },
+                  {
+                      "name":  "메이즈랜드",
+                      "area":  "동쪽(구좌)",
+                      "indoor":  false,
+                      "type":  "미로공원",
+                      "lat":  33.48826,
+                      "lon":  126.80087
+                  },
+                  {
+                      "name":  "김녕미로공원",
+                      "area":  "동쪽(구좌)",
+                      "indoor":  false,
+                      "type":  "미로공원",
+                      "lat":  33.53653,
+                      "lon":  126.77224
+                  },
+                  {
+                      "name":  "스누피가든",
+                      "area":  "동쪽(구좌)",
+                      "indoor":  false,
+                      "type":  "테마정원",
+                      "lat":  33.44413,
+                      "lon":  126.77817
+                  },
+                  {
+                      "name":  "제주레일바이크",
+                      "area":  "동쪽(구좌)",
+                      "indoor":  false,
+                      "type":  "체험",
+                      "lat":  33.46427,
+                      "lon":  126.83652
+                  },
+                  {
+                      "name":  "별방진",
+                      "area":  "동쪽(구좌)",
+                      "indoor":  false,
+                      "type":  "유적",
+                      "lat":  33.52677,
+                      "lon":  126.8829
+                  },
+                  {
+                      "name":  "하도리 철새도래지",
+                      "area":  "동쪽(구좌)",
+                      "indoor":  false,
+                      "type":  "생태",
+                      "lat":  33.51042,
+                      "lon":  126.89632
+                  },
+                  {
+                      "name":  "토끼섬 문주란 자생지",
+                      "area":  "동쪽(구좌)",
+                      "indoor":  false,
+                      "type":  "생태",
+                      "lat":  33.52375,
+                      "lon":  126.90268
+                  },
+                  {
+                      "name":  "행원포구",
+                      "area":  "동쪽(구좌)",
+                      "indoor":  false,
+                      "type":  "포구",
+                      "lat":  33.55642,
+                      "lon":  126.80775
+                  },
+                  {
+                      "name":  "세화포구",
+                      "area":  "동쪽(구좌)",
+                      "indoor":  false,
+                      "type":  "포구",
+                      "lat":  33.52822,
+                      "lon":  126.857
+                  },
+                  {
+                      "name":  "김녕항",
+                      "area":  "동쪽(구좌)",
+                      "indoor":  false,
+                      "type":  "항구",
+                      "lat":  33.55977,
+                      "lon":  126.73731
+                  },
+                  {
+                      "name":  "행원 풍력발전단지",
+                      "area":  "동쪽(구좌)",
+                      "indoor":  false,
+                      "type":  "풍경"
+                  },
+                  {
+                      "name":  "세화민속오일시장",
+                      "area":  "동쪽(구좌)",
+                      "indoor":  false,
+                      "type":  "시장",
+                      "lat":  33.52619,
+                      "lon":  126.8573
+                  },
+                  {
+                      "name":  "송당 본향당",
+                      "area":  "동쪽(구좌)",
+                      "indoor":  false,
+                      "type":  "유적",
+                      "lat":  33.46844,
+                      "lon":  126.77572
+                  },
+                  {
+                      "name":  "송당리 마을",
+                      "area":  "동쪽(구좌)",
+                      "indoor":  false,
+                      "type":  "마을",
+                      "lat":  33.43543,
+                      "lon":  126.73204
+                  },
+                  {
+                      "name":  "종달리 마을",
+                      "area":  "동쪽(구좌)",
+                      "indoor":  false,
+                      "type":  "마을",
+                      "lat":  33.49319,
+                      "lon":  126.90131
+                  },
+                  {
+                      "name":  "평대리 마을",
+                      "area":  "동쪽(구좌)",
+                      "indoor":  false,
+                      "type":  "마을",
+                      "lat":  33.52386,
+                      "lon":  126.84158
+                  },
+                  {
+                      "name":  "한동리 해안",
+                      "area":  "동쪽(구좌)",
+                      "indoor":  false,
+                      "type":  "바다 · 산책",
+                      "lat":  33.56441,
+                      "lon":  126.76476
+                  },
+                  {
+                      "name":  "김녕 해안마을",
+                      "area":  "동쪽(구좌)",
+                      "indoor":  false,
+                      "type":  "마을"
+                  },
+                  {
+                      "name":  "제주올레 20코스(김녕~하도)",
+                      "area":  "동쪽(구좌)",
+                      "indoor":  false,
+                      "type":  "올레길",
+                      "lat":  33.55608,
+                      "lon":  126.81008
+                  },
+                  {
+                      "name":  "제주올레 21코스(하도~종달)",
+                      "area":  "동쪽(구좌)",
+                      "indoor":  false,
+                      "type":  "올레길"
+                  },
+                  {
+                      "name":  "동문재래시장",
+                      "area":  "제주시",
+                      "indoor":  true,
+                      "type":  "시장",
+                      "lat":  33.51278,
+                      "lon":  126.5283
+                  },
+                  {
+                      "name":  "국립제주박물관",
+                      "area":  "제주시",
+                      "indoor":  true,
+                      "type":  "박물관",
+                      "lat":  33.5136,
+                      "lon":  126.54888
+                  },
+                  {
+                      "name":  "제주특별자치도 민속자연사박물관",
+                      "area":  "제주시",
+                      "indoor":  true,
+                      "type":  "박물관",
+                      "lat":  33.50635,
+                      "lon":  126.53152
+                  },
+                  {
+                      "name":  "한라수목원",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "숲 · 산책",
+                      "lat":  33.46978,
+                      "lon":  126.49327
+                  },
+                  {
+                      "name":  "용두암",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "바다 · 기암",
+                      "lat":  33.51612,
+                      "lon":  126.51197
+                  },
+                  {
+                      "name":  "용연구름다리",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "산책",
+                      "lat":  33.51488,
+                      "lon":  126.51439
+                  },
+                  {
+                      "name":  "이호테우해변",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "바다",
+                      "lat":  33.49738,
+                      "lon":  126.45269
+                  },
+                  {
+                      "name":  "도두봉",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "오름",
+                      "lat":  33.50791,
+                      "lon":  126.46837
+                  },
+                  {
+                      "name":  "도두항",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "항구",
+                      "lat":  33.5074,
+                      "lon":  126.46655
+                  },
+                  {
+                      "name":  "도두 무지개해안도로",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "해안도로",
+                      "lat":  33.50912,
+                      "lon":  126.47134
+                  },
+                  {
+                      "name":  "사라봉",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "오름 · 산책",
+                      "lat":  33.51796,
+                      "lon":  126.54477
+                  },
+                  {
+                      "name":  "별도봉",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "오름 · 산책",
+                      "lat":  33.5192,
+                      "lon":  126.55309
+                  },
+                  {
+                      "name":  "삼양검은모래해변",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "바다",
+                      "lat":  33.52587,
+                      "lon":  126.58554
+                  },
+                  {
+                      "name":  "원당봉",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "오름",
+                      "lat":  33.52531,
+                      "lon":  126.59967
+                  },
+                  {
+                      "name":  "불탑사 오층석탑",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "유적",
+                      "lat":  33.5293,
+                      "lon":  126.59818
+                  },
+                  {
+                      "name":  "화북포구",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "포구",
+                      "lat":  33.52472,
+                      "lon":  126.56494
+                  },
+                  {
+                      "name":  "제주목관아",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "유적",
+                      "lat":  33.5142,
+                      "lon":  126.522
+                  },
+                  {
+                      "name":  "관덕정",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "유적",
+                      "lat":  33.51335,
+                      "lon":  126.52146
+                  },
+                  {
+                      "name":  "삼성혈",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "유적",
+                      "lat":  33.50443,
+                      "lon":  126.52876
+                  },
+                  {
+                      "name":  "오현단",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "유적",
+                      "lat":  33.51028,
+                      "lon":  126.52544
+                  },
+                  {
+                      "name":  "제주향교",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "유적",
+                      "lat":  33.5111,
+                      "lon":  126.51561
+                  },
+                  {
+                      "name":  "제주성지",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "유적",
+                      "lat":  33.51016,
+                      "lon":  126.5255
+                  },
+                  {
+                      "name":  "산지천",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "산책",
+                      "lat":  33.51336,
+                      "lon":  126.5274
+                  },
+                  {
+                      "name":  "탑동광장",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "바다 · 광장",
+                      "lat":  33.51808,
+                      "lon":  126.52667
+                  },
+                  {
+                      "name":  "아라리오뮤지엄 탑동시네마",
+                      "area":  "제주시",
+                      "indoor":  true,
+                      "type":  "미술관",
+                      "lat":  33.51742,
+                      "lon":  126.52339
+                  },
+                  {
+                      "name":  "칠성로 쇼핑거리",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "쇼핑",
+                      "lat":  33.51437,
+                      "lon":  126.52544
+                  },
+                  {
+                      "name":  "누웨마루거리",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "쇼핑 · 음식",
+                      "lat":  33.48601,
+                      "lon":  126.49066
+                  },
+                  {
+                      "name":  "제주민속오일시장",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "시장",
+                      "lat":  33.49724,
+                      "lon":  126.47548
+                  },
+                  {
+                      "name":  "넥슨컴퓨터박물관",
+                      "area":  "제주시",
+                      "indoor":  true,
+                      "type":  "박물관",
+                      "lat":  33.47176,
+                      "lon":  126.48499
+                  },
+                  {
+                      "name":  "제주도립미술관",
+                      "area":  "제주시",
+                      "indoor":  true,
+                      "type":  "미술관",
+                      "lat":  33.45258,
+                      "lon":  126.48964
+                  },
+                  {
+                      "name":  "신비의 도로(도깨비도로)",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "도로"
+                  },
+                  {
+                      "name":  "신산공원",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "공원",
+                      "lat":  33.50702,
+                      "lon":  126.53316
+                  },
+                  {
+                      "name":  "별빛누리공원",
+                      "area":  "제주시",
+                      "indoor":  true,
+                      "type":  "천문대",
+                      "lat":  33.44454,
+                      "lon":  126.54916
+                  },
+                  {
+                      "name":  "방선문",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "계곡",
+                      "lat":  33.45283,
+                      "lon":  126.51783
+                  },
+                  {
+                      "name":  "산천단",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "유적",
+                      "lat":  33.44751,
+                      "lon":  126.55416
+                  },
+                  {
+                      "name":  "민오름(오라)",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "오름"
+                  },
+                  {
+                      "name":  "제주4·3평화공원",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "기념공원",
+                      "lat":  33.45127,
+                      "lon":  126.61793
+                  },
+                  {
+                      "name":  "절물자연휴양림",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "숲",
+                      "lat":  33.43915,
+                      "lon":  126.62801
+                  },
+                  {
+                      "name":  "한라생태숲",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "숲",
+                      "lat":  33.43129,
+                      "lon":  126.5977
+                  },
+                  {
+                      "name":  "어승생악",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "오름",
+                      "lat":  33.39652,
+                      "lon":  126.48928
+                  },
+                  {
+                      "name":  "한라산 어리목코스",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "산 · 등산",
+                      "lat":  33.36868,
+                      "lon":  126.50906
+                  },
+                  {
+                      "name":  "한라산 관음사코스",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "산 · 등산",
+                      "lat":  33.39084,
+                      "lon":  126.53801
+                  },
+                  {
+                      "name":  "관음사",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "사찰",
+                      "lat":  33.42374,
+                      "lon":  126.55812
+                  },
+                  {
+                      "name":  "한라산 성판악코스",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "산 · 등산",
+                      "lat":  33.37813,
+                      "lon":  126.57503
+                  },
+                  {
+                      "name":  "함덕해수욕장",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "바다",
+                      "lat":  33.54306,
+                      "lon":  126.66924
+                  },
+                  {
+                      "name":  "서우봉",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "오름",
+                      "lat":  33.54584,
+                      "lon":  126.67759
+                  },
+                  {
+                      "name":  "연북정",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "유적",
+                      "lat":  33.54008,
+                      "lon":  126.63612
+                  },
+                  {
+                      "name":  "제주항일기념관",
+                      "area":  "제주시",
+                      "indoor":  true,
+                      "type":  "기념관",
+                      "lat":  33.54157,
+                      "lon":  126.64283
+                  },
+                  {
+                      "name":  "너븐숭이 4·3기념관",
+                      "area":  "제주시",
+                      "indoor":  true,
+                      "type":  "기념관",
+                      "lat":  33.546,
+                      "lon":  126.68866
+                  },
+                  {
+                      "name":  "동백동산",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "숲 · 습지",
+                      "lat":  33.51645,
+                      "lon":  126.71603
+                  },
+                  {
+                      "name":  "에코랜드",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "숲 · 테마파크",
+                      "lat":  33.45131,
+                      "lon":  126.67233
+                  },
+                  {
+                      "name":  "거문오름",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "오름",
+                      "lat":  33.45484,
+                      "lon":  126.71826
+                  },
+                  {
+                      "name":  "산굼부리",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "분화구",
+                      "lat":  33.43257,
+                      "lon":  126.69383
+                  },
+                  {
+                      "name":  "사려니숲길",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "숲 · 산책",
+                      "lat":  33.42203,
+                      "lon":  126.6265
+                  },
+                  {
+                      "name":  "교래자연휴양림",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "숲",
+                      "lat":  33.44036,
+                      "lon":  126.66496
+                  },
+                  {
+                      "name":  "제주돌문화공원",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "공원 · 박물관",
+                      "lat":  33.44856,
+                      "lon":  126.66027
+                  },
+                  {
+                      "name":  "삼다수숲길",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "숲 · 산책",
+                      "lat":  33.42159,
+                      "lon":  126.66654
+                  },
+                  {
+                      "name":  "곽지해수욕장",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "바다",
+                      "lat":  33.45064,
+                      "lon":  126.30468
+                  },
+                  {
+                      "name":  "한담해안산책로",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "바다 · 산책",
+                      "lat":  33.46198,
+                      "lon":  126.31057
+                  },
+                  {
+                      "name":  "애월해안도로",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "해안도로",
+                      "lat":  33.47812,
+                      "lon":  126.36868
+                  },
+                  {
+                      "name":  "구엄리 돌염전",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "바다 · 유적",
+                      "lat":  33.48344,
+                      "lon":  126.37647
+                  },
+                  {
+                      "name":  "고내포구",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "포구",
+                      "lat":  33.46734,
+                      "lon":  126.33776
+                  },
+                  {
+                      "name":  "애월항",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "항구",
+                      "lat":  33.46703,
+                      "lon":  126.32235
+                  },
+                  {
+                      "name":  "새별오름",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "오름",
+                      "lat":  33.36628,
+                      "lon":  126.35773
+                  },
+                  {
+                      "name":  "수산봉",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "오름",
+                      "lat":  33.47301,
+                      "lon":  126.38456
+                  },
+                  {
+                      "name":  "수산저수지",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "호수",
+                      "lat":  33.47095,
+                      "lon":  126.38734
+                  },
+                  {
+                      "name":  "항파두리 항몽유적지",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "유적",
+                      "lat":  33.45275,
+                      "lon":  126.40792
+                  },
+                  {
+                      "name":  "납읍 금산공원",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "숲"
+                  },
+                  {
+                      "name":  "노꼬메오름",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "오름",
+                      "lat":  33.38913,
+                      "lon":  126.41146
+                  },
+                  {
+                      "name":  "바리메오름",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "오름",
+                      "lat":  33.37713,
+                      "lon":  126.38802
+                  },
+                  {
+                      "name":  "궷물오름",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "오름",
+                      "lat":  33.39695,
+                      "lon":  126.40594
+                  },
+                  {
+                      "name":  "9.81파크",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "체험",
+                      "lat":  33.39019,
+                      "lon":  126.36658
+                  },
+                  {
+                      "name":  "아르떼뮤지엄 제주",
+                      "area":  "제주시",
+                      "indoor":  true,
+                      "type":  "전시",
+                      "lat":  33.3967,
+                      "lon":  126.34501
+                  },
+                  {
+                      "name":  "수월봉",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "오름 · 지질",
+                      "lat":  33.29477,
+                      "lon":  126.16311
+                  },
+                  {
+                      "name":  "엉알해안",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "바다 · 지질",
+                      "lat":  33.29942,
+                      "lon":  126.16752
+                  },
+                  {
+                      "name":  "차귀도",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "섬",
+                      "lat":  33.31155,
+                      "lon":  126.14763
+                  },
+                  {
+                      "name":  "자구내포구",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "포구",
+                      "lat":  33.30931,
+                      "lon":  126.16537
+                  },
+                  {
+                      "name":  "당산봉",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "오름",
+                      "lat":  33.30774,
+                      "lon":  126.17298
+                  },
+                  {
+                      "name":  "고산리 유적",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "유적",
+                      "lat":  33.30508,
+                      "lon":  126.16665
+                  },
+                  {
+                      "name":  "신창풍차해안도로",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "해안도로",
+                      "lat":  33.34308,
+                      "lon":  126.17421
+                  },
+                  {
+                      "name":  "싱계물공원",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "바다 · 공원",
+                      "lat":  33.34286,
+                      "lon":  126.17404
+                  },
+                  {
+                      "name":  "판포포구",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "포구",
+                      "lat":  33.36502,
+                      "lon":  126.20002
+                  },
+                  {
+                      "name":  "용수포구",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "포구",
+                      "lat":  33.32331,
+                      "lon":  126.1664
+                  },
+                  {
+                      "name":  "절부암",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "유적",
+                      "lat":  33.32369,
+                      "lon":  126.16714
+                  },
+                  {
+                      "name":  "저지오름",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "오름",
+                      "lat":  33.33406,
+                      "lon":  126.25098
+                  },
+                  {
+                      "name":  "제주현대미술관",
+                      "area":  "제주시",
+                      "indoor":  true,
+                      "type":  "미술관",
+                      "lat":  33.33966,
+                      "lon":  126.26559
+                  },
+                  {
+                      "name":  "저지문화예술인마을",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "마을 · 예술",
+                      "lat":  33.33952,
+                      "lon":  126.26706
+                  },
+                  {
+                      "name":  "생각하는 정원",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "정원",
+                      "lat":  33.32607,
+                      "lon":  126.255
+                  },
+                  {
+                      "name":  "환상숲곶자왈공원",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "숲",
+                      "lat":  33.32291,
+                      "lon":  126.26303
+                  },
+                  {
+                      "name":  "낙천리 아홉굿마을",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "마을",
+                      "lat":  33.32761,
+                      "lon":  126.22678
+                  },
+                  {
+                      "name":  "유리의 성",
+                      "area":  "제주시",
+                      "indoor":  true,
+                      "type":  "전시",
+                      "lat":  33.31464,
+                      "lon":  126.27366
+                  },
+                  {
+                      "name":  "우도",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "섬",
+                      "lat":  33.50442,
+                      "lon":  126.95558
+                  },
+                  {
+                      "name":  "우도봉",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "오름",
+                      "lat":  33.5,
+                      "lon":  126.96742
+                  },
+                  {
+                      "name":  "서빈백사(홍조단괴해빈)",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "바다",
+                      "lat":  33.50139,
+                      "lon":  126.9431
+                  },
+                  {
+                      "name":  "하고수동해수욕장",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "바다",
+                      "lat":  33.51415,
+                      "lon":  126.95765
+                  },
+                  {
+                      "name":  "검멀레해변",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "바다",
+                      "lat":  33.49717,
+                      "lon":  126.9669
+                  },
+                  {
+                      "name":  "우도 등대공원",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "공원",
+                      "lat":  33.49291,
+                      "lon":  126.9652
+                  },
+                  {
+                      "name":  "추자도",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "섬",
+                      "lat":  33.49595,
+                      "lon":  126.52832
+                  },
+                  {
+                      "name":  "제주올레 17코스(광령~산지천)",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "올레길"
+                  },
+                  {
+                      "name":  "제주올레 18코스(산지천~조천)",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "올레길",
+                      "lat":  33.52578,
+                      "lon":  126.58728
+                  },
+                  {
+                      "name":  "제주올레 19코스(조천~김녕)",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "올레길",
+                      "lat":  33.54957,
+                      "lon":  126.6899
+                  },
+                  {
+                      "name":  "제주올레 16코스(고내~광령)",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "올레길",
+                      "lat":  33.46867,
+                      "lon":  126.3873
+                  },
+                  {
+                      "name":  "제주올레 13코스(용수~저지)",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "올레길",
+                      "lat":  33.32632,
+                      "lon":  126.21921
+                  },
+                  {
+                      "name":  "제주올레 12코스(무릉~용수)",
+                      "area":  "제주시",
+                      "indoor":  false,
+                      "type":  "올레길",
+                      "lat":  33.27988,
+                      "lon":  126.19587
+                  },
+                  {
+                      "name":  "협재해수욕장",
+                      "area":  "서쪽(한림)",
+                      "indoor":  false,
+                      "type":  "바다",
+                      "lat":  33.39431,
+                      "lon":  126.23965
+                  },
+                  {
+                      "name":  "금능해수욕장",
+                      "area":  "서쪽(한림)",
+                      "indoor":  false,
+                      "type":  "바다",
+                      "lat":  33.39045,
+                      "lon":  126.23589
+                  },
+                  {
+                      "name":  "한림공원",
+                      "area":  "서쪽(한림)",
+                      "indoor":  false,
+                      "type":  "정원 · 동굴",
+                      "lat":  33.39023,
+                      "lon":  126.23969
+                  },
+                  {
+                      "name":  "비양도",
+                      "area":  "서쪽(한림)",
+                      "indoor":  false,
+                      "type":  "섬",
+                      "lat":  33.41028,
+                      "lon":  126.22735
+                  },
+                  {
+                      "name":  "비양봉",
+                      "area":  "서쪽(한림)",
+                      "indoor":  false,
+                      "type":  "오름",
+                      "lat":  33.40945,
+                      "lon":  126.22697
+                  },
+                  {
+                      "name":  "금오름",
+                      "area":  "서쪽(한림)",
+                      "indoor":  false,
+                      "type":  "오름",
+                      "lat":  33.35457,
+                      "lon":  126.30584
+                  },
+                  {
+                      "name":  "정물오름",
+                      "area":  "서쪽(한림)",
+                      "indoor":  false,
+                      "type":  "오름",
+                      "lat":  33.33836,
+                      "lon":  126.32963
+                  },
+                  {
+                      "name":  "느지리오름",
+                      "area":  "서쪽(한림)",
+                      "indoor":  false,
+                      "type":  "오름",
+                      "lat":  33.36657,
+                      "lon":  126.26159
+                  },
+                  {
+                      "name":  "성이시돌목장",
+                      "area":  "서쪽(한림)",
+                      "indoor":  false,
+                      "type":  "목장",
+                      "lat":  33.34777,
+                      "lon":  126.32732
+                  },
+                  {
+                      "name":  "새미은총의동산",
+                      "area":  "서쪽(한림)",
+                      "indoor":  false,
+                      "type":  "산책",
+                      "lat":  33.348,
+                      "lon":  126.32375
+                  },
+                  {
+                      "name":  "월령리 선인장군락지",
+                      "area":  "서쪽(한림)",
+                      "indoor":  false,
+                      "type":  "바다 · 산책",
+                      "lat":  33.37795,
+                      "lon":  126.2154
+                  },
+                  {
+                      "name":  "한림항",
+                      "area":  "서쪽(한림)",
+                      "indoor":  false,
+                      "type":  "항구",
+                      "lat":  33.41931,
+                      "lon":  126.26204
+                  },
+                  {
+                      "name":  "옹포포구",
+                      "area":  "서쪽(한림)",
+                      "indoor":  false,
+                      "type":  "포구",
+                      "lat":  33.40448,
+                      "lon":  126.25026
+                  },
+                  {
+                      "name":  "한림민속오일시장",
+                      "area":  "서쪽(한림)",
+                      "indoor":  false,
+                      "type":  "시장",
+                      "lat":  33.42019,
+                      "lon":  126.27416
+                  },
+                  {
+                      "name":  "금능석물원",
+                      "area":  "서쪽(한림)",
+                      "indoor":  false,
+                      "type":  "정원",
+                      "lat":  33.38486,
+                      "lon":  126.22684
+                  },
+                  {
+                      "name":  "명월대",
+                      "area":  "서쪽(한림)",
+                      "indoor":  false,
+                      "type":  "유적",
+                      "lat":  33.38901,
+                      "lon":  126.26623
+                  },
+                  {
+                      "name":  "명월성지",
+                      "area":  "서쪽(한림)",
+                      "indoor":  false,
+                      "type":  "유적",
+                      "lat":  33.39944,
+                      "lon":  126.26285
+                  },
+                  {
+                      "name":  "더마파크",
+                      "area":  "서쪽(한림)",
+                      "indoor":  false,
+                      "type":  "체험",
+                      "lat":  33.35554,
+                      "lon":  126.2415
+                  },
+                  {
+                      "name":  "한림 해안도로",
+                      "area":  "서쪽(한림)",
+                      "indoor":  false,
+                      "type":  "해안도로",
+                      "lat":  33.44399,
+                      "lon":  126.28746
+                  },
+                  {
+                      "name":  "귀덕리 해안",
+                      "area":  "서쪽(한림)",
+                      "indoor":  false,
+                      "type":  "바다 · 산책",
+                      "lat":  33.43592,
+                      "lon":  126.27188
+                  },
+                  {
+                      "name":  "제주올레 14코스(저지~한림)",
+                      "area":  "서쪽(한림)",
+                      "indoor":  false,
+                      "type":  "올레길",
+                      "lat":  33.38941,
+                      "lon":  126.22748
+                  },
+                  {
+                      "name":  "제주올레 15코스(한림~고내)",
+                      "area":  "서쪽(한림)",
+                      "indoor":  false,
+                      "type":  "올레길",
+                      "lat":  33.44699,
+                      "lon":  126.29936
+                  },
+                  {
+                      "name":  "협재리 마을",
+                      "area":  "서쪽(한림)",
+                      "indoor":  false,
+                      "type":  "마을",
+                      "lat":  33.40514,
+                      "lon":  126.22904
+                  },
+                  {
+                      "name":  "명월리 마을",
+                      "area":  "서쪽(한림)",
+                      "indoor":  false,
+                      "type":  "마을",
+                      "lat":  33.38698,
+                      "lon":  126.26663
+                  },
+                  {
+                      "name":  "오설록 티 뮤지엄",
+                      "area":  "서쪽(안덕)",
+                      "indoor":  true,
+                      "type":  "전시 · 카페",
+                      "lat":  33.30592,
+                      "lon":  126.28949
+                  },
+                  {
+                      "name":  "서광다원 차밭",
+                      "area":  "서쪽(안덕)",
+                      "indoor":  false,
+                      "type":  "차밭"
+                  },
+                  {
+                      "name":  "이니스프리 제주하우스",
+                      "area":  "서쪽(안덕)",
+                      "indoor":  true,
+                      "type":  "전시 · 카페",
+                      "lat":  33.30634,
+                      "lon":  126.29047
+                  },
+                  {
+                      "name":  "산방산",
+                      "area":  "서쪽(안덕)",
+                      "indoor":  false,
+                      "type":  "산",
+                      "lat":  33.24156,
+                      "lon":  126.31337
+                  },
+                  {
+                      "name":  "산방굴사",
+                      "area":  "서쪽(안덕)",
+                      "indoor":  false,
+                      "type":  "사찰",
+                      "lat":  33.23796,
+                      "lon":  126.31309
+                  },
+                  {
+                      "name":  "산방산 탄산온천",
+                      "area":  "서쪽(안덕)",
+                      "indoor":  true,
+                      "type":  "온천",
+                      "lat":  33.24891,
+                      "lon":  126.29874
+                  },
+                  {
+                      "name":  "용머리해안",
+                      "area":  "서쪽(안덕)",
+                      "indoor":  false,
+                      "type":  "바다 · 지질",
+                      "lat":  33.23166,
+                      "lon":  126.31472
+                  },
+                  {
+                      "name":  "하멜상선전시관",
+                      "area":  "서쪽(안덕)",
+                      "indoor":  true,
+                      "type":  "전시"
+                  },
+                  {
+                      "name":  "사계해변",
+                      "area":  "서쪽(안덕)",
+                      "indoor":  false,
+                      "type":  "바다",
+                      "lat":  33.22866,
+                      "lon":  126.3086
+                  },
+                  {
+                      "name":  "사계포구",
+                      "area":  "서쪽(안덕)",
+                      "indoor":  false,
+                      "type":  "포구",
+                      "lat":  33.2282,
+                      "lon":  126.30658
+                  },
+                  {
+                      "name":  "형제섬",
+                      "area":  "서쪽(안덕)",
+                      "indoor":  false,
+                      "type":  "섬",
+                      "lat":  33.21,
+                      "lon":  126.31434
+                  },
+                  {
+                      "name":  "사계리 사람발자국 화석지",
+                      "area":  "서쪽(안덕)",
+                      "indoor":  false,
+                      "type":  "지질"
+                  },
+                  {
+                      "name":  "화순금모래해변",
+                      "area":  "서쪽(안덕)",
+                      "indoor":  false,
+                      "type":  "바다",
+                      "lat":  33.24003,
+                      "lon":  126.33359
+                  },
+                  {
+                      "name":  "화순항",
+                      "area":  "서쪽(안덕)",
+                      "indoor":  false,
+                      "type":  "항구",
+                      "lat":  33.23467,
+                      "lon":  126.33183
+                  },
+                  {
+                      "name":  "화순곶자왈",
+                      "area":  "서쪽(안덕)",
+                      "indoor":  false,
+                      "type":  "숲",
+                      "lat":  33.26404,
+                      "lon":  126.33195
+                  },
+                  {
+                      "name":  "박수기정",
+                      "area":  "서쪽(안덕)",
+                      "indoor":  false,
+                      "type":  "바다 · 절벽",
+                      "lat":  33.23647,
+                      "lon":  126.35917
+                  },
+                  {
+                      "name":  "대평포구",
+                      "area":  "서쪽(안덕)",
+                      "indoor":  false,
+                      "type":  "포구",
+                      "lat":  33.23721,
+                      "lon":  126.36164
+                  },
+                  {
+                      "name":  "대평리 마을",
+                      "area":  "서쪽(안덕)",
+                      "indoor":  false,
+                      "type":  "마을",
+                      "lat":  33.23854,
+                      "lon":  126.36591
+                  },
+                  {
+                      "name":  "카멜리아힐",
+                      "area":  "서쪽(안덕)",
+                      "indoor":  false,
+                      "type":  "정원",
+                      "lat":  33.29034,
+                      "lon":  126.36819
+                  },
+                  {
+                      "name":  "본태박물관",
+                      "area":  "서쪽(안덕)",
+                      "indoor":  true,
+                      "type":  "박물관",
+                      "lat":  33.30377,
+                      "lon":  126.39248
+                  },
+                  {
+                      "name":  "방주교회",
+                      "area":  "서쪽(안덕)",
+                      "indoor":  false,
+                      "type":  "건축",
+                      "lat":  33.30505,
+                      "lon":  126.38744
+                  },
+                  {
+                      "name":  "제주항공우주박물관",
+                      "area":  "서쪽(안덕)",
+                      "indoor":  true,
+                      "type":  "박물관",
+                      "lat":  33.30435,
+                      "lon":  126.29979
+                  },
+                  {
+                      "name":  "소인국테마파크",
+                      "area":  "서쪽(안덕)",
+                      "indoor":  false,
+                      "type":  "테마파크",
+                      "lat":  33.2818,
+                      "lon":  126.33154
+                  },
+                  {
+                      "name":  "제주신화월드",
+                      "area":  "서쪽(안덕)",
+                      "indoor":  true,
+                      "type":  "리조트 · 테마파크",
+                      "lat":  33.30494,
+                      "lon":  126.3164
+                  },
+                  {
+                      "name":  "안덕계곡",
+                      "area":  "서쪽(안덕)",
+                      "indoor":  false,
+                      "type":  "계곡",
+                      "lat":  33.2572,
+                      "lon":  126.35258
+                  },
+                  {
+                      "name":  "군산오름",
+                      "area":  "서쪽(안덕)",
+                      "indoor":  false,
+                      "type":  "오름",
+                      "lat":  33.25324,
+                      "lon":  126.36997
+                  },
+                  {
+                      "name":  "왕이메오름",
+                      "area":  "서쪽(안덕)",
+                      "indoor":  false,
+                      "type":  "오름",
+                      "lat":  33.34355,
+                      "lon":  126.37657
+                  },
+                  {
+                      "name":  "원물오름",
+                      "area":  "서쪽(안덕)",
+                      "indoor":  false,
+                      "type":  "오름",
+                      "lat":  33.32321,
+                      "lon":  126.34488
+                  },
+                  {
+                      "name":  "도너리오름",
+                      "area":  "서쪽(안덕)",
+                      "indoor":  false,
+                      "type":  "오름",
+                      "lat":  33.3257,
+                      "lon":  126.32134
+                  },
+                  {
+                      "name":  "동광 큰넓궤",
+                      "area":  "서쪽(안덕)",
+                      "indoor":  false,
+                      "type":  "유적"
+                  },
+                  {
+                      "name":  "덕수리 마을",
+                      "area":  "서쪽(안덕)",
+                      "indoor":  false,
+                      "type":  "마을",
+                      "lat":  33.2546,
+                      "lon":  126.30656
+                  },
+                  {
+                      "name":  "제주올레 9코스(대평~화순)",
+                      "area":  "서쪽(안덕)",
+                      "indoor":  false,
+                      "type":  "올레길",
+                      "lat":  33.25907,
+                      "lon":  126.36421
+                  },
+                  {
+                      "name":  "제주올레 10코스(화순~모슬포)",
+                      "area":  "서쪽(안덕)",
+                      "indoor":  false,
+                      "type":  "올레길",
+                      "lat":  33.20312,
+                      "lon":  126.29091
+                  },
+                  {
+                      "name":  "외돌개",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "바다 · 산책",
+                      "lat":  33.23903,
+                      "lon":  126.54486
+                  },
+                  {
+                      "name":  "황우지해안",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "바다",
+                      "lat":  33.24147,
+                      "lon":  126.55053
+                  },
+                  {
+                      "name":  "삼매봉",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "오름",
+                      "lat":  33.24397,
+                      "lon":  126.54631
+                  },
+                  {
+                      "name":  "천지연폭포",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "폭포",
+                      "lat":  33.24474,
+                      "lon":  126.5597
+                  },
+                  {
+                      "name":  "정방폭포",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "폭포",
+                      "lat":  33.24491,
+                      "lon":  126.57153
+                  },
+                  {
+                      "name":  "소정방폭포",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "폭포",
+                      "lat":  33.24523,
+                      "lon":  126.57763
+                  },
+                  {
+                      "name":  "서복전시관",
+                      "area":  "서귀포",
+                      "indoor":  true,
+                      "type":  "전시",
+                      "lat":  33.24486,
+                      "lon":  126.57089
+                  },
+                  {
+                      "name":  "천제연폭포",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "폭포",
+                      "lat":  33.25268,
+                      "lon":  126.41838
+                  },
+                  {
+                      "name":  "엉또폭포",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "폭포",
+                      "lat":  33.26853,
+                      "lon":  126.49997
+                  },
+                  {
+                      "name":  "쇠소깍",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "바다 · 계곡",
+                      "lat":  33.25252,
+                      "lon":  126.62344
+                  },
+                  {
+                      "name":  "효돈천",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "계곡",
+                      "lat":  33.30151,
+                      "lon":  126.60178
+                  },
+                  {
+                      "name":  "새연교 · 새섬",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "바다 · 산책",
+                      "lat":  33.23853,
+                      "lon":  126.55889
+                  },
+                  {
+                      "name":  "서귀포항",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "항구",
+                      "lat":  33.2368,
+                      "lon":  126.5664
+                  },
+                  {
+                      "name":  "문섬",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "섬",
+                      "lat":  33.22661,
+                      "lon":  126.56605
+                  },
+                  {
+                      "name":  "섶섬",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "섬",
+                      "lat":  33.22999,
+                      "lon":  126.59901
+                  },
+                  {
+                      "name":  "범섬",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "섬",
+                      "lat":  33.21847,
+                      "lon":  126.51631
+                  },
+                  {
+                      "name":  "법환포구",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "포구",
+                      "lat":  33.23726,
+                      "lon":  126.51561
+                  },
+                  {
+                      "name":  "보목포구",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "포구",
+                      "lat":  33.23918,
+                      "lon":  126.60816
+                  },
+                  {
+                      "name":  "제지기오름",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "오름",
+                      "lat":  33.24163,
+                      "lon":  126.60948
+                  },
+                  {
+                      "name":  "칠십리시공원",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "공원",
+                      "lat":  33.24401,
+                      "lon":  126.55764
+                  },
+                  {
+                      "name":  "자구리공원",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "공원",
+                      "lat":  33.24175,
+                      "lon":  126.56738
+                  },
+                  {
+                      "name":  "정모시공원",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "공원",
+                      "lat":  33.24686,
+                      "lon":  126.57185
+                  },
+                  {
+                      "name":  "걸매생태공원",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "공원",
+                      "lat":  33.24978,
+                      "lon":  126.55485
+                  },
+                  {
+                      "name":  "솜반천",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "계곡 · 산책",
+                      "lat":  33.25331,
+                      "lon":  126.55362
+                  },
+                  {
+                      "name":  "하논분화구",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "분화구",
+                      "lat":  33.25105,
+                      "lon":  126.54504
+                  },
+                  {
+                      "name":  "이중섭미술관",
+                      "area":  "서귀포",
+                      "indoor":  true,
+                      "type":  "미술관",
+                      "lat":  33.24586,
+                      "lon":  126.56487
+                  },
+                  {
+                      "name":  "이중섭거리",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "거리 · 예술",
+                      "lat":  33.24761,
+                      "lon":  126.564
+                  },
+                  {
+                      "name":  "기당미술관",
+                      "area":  "서귀포",
+                      "indoor":  true,
+                      "type":  "미술관",
+                      "lat":  33.24489,
+                      "lon":  126.5512
+                  },
+                  {
+                      "name":  "서귀포매일올레시장",
+                      "area":  "서귀포",
+                      "indoor":  true,
+                      "type":  "시장",
+                      "lat":  33.25015,
+                      "lon":  126.56323
+                  },
+                  {
+                      "name":  "제주감귤박물관",
+                      "area":  "서귀포",
+                      "indoor":  true,
+                      "type":  "박물관",
+                      "lat":  33.27156,
+                      "lon":  126.60747
+                  },
+                  {
+                      "name":  "고근산",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "오름",
+                      "lat":  33.26679,
+                      "lon":  126.51287
+                  },
+                  {
+                      "name":  "제주월드컵경기장",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "경기장",
+                      "lat":  33.24615,
+                      "lon":  126.50938
+                  },
+                  {
+                      "name":  "강정천",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "계곡",
+                      "lat":  33.23267,
+                      "lon":  126.48943
+                  },
+                  {
+                      "name":  "약천사",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "사찰",
+                      "lat":  33.24624,
+                      "lon":  126.44946
+                  },
+                  {
+                      "name":  "대포포구",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "포구",
+                      "lat":  33.23768,
+                      "lon":  126.43914
+                  },
+                  {
+                      "name":  "중문 대포주상절리대",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "바다 · 지질",
+                      "lat":  33.23798,
+                      "lon":  126.42601
+                  },
+                  {
+                      "name":  "중문관광단지",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "관광단지",
+                      "lat":  33.24584,
+                      "lon":  126.42073
+                  },
+                  {
+                      "name":  "중문색달해수욕장",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "바다",
+                      "lat":  33.24504,
+                      "lon":  126.4115
+                  },
+                  {
+                      "name":  "여미지식물원",
+                      "area":  "서귀포",
+                      "indoor":  true,
+                      "type":  "식물원",
+                      "lat":  33.25261,
+                      "lon":  126.41426
+                  },
+                  {
+                      "name":  "테디베어뮤지엄",
+                      "area":  "서귀포",
+                      "indoor":  true,
+                      "type":  "박물관",
+                      "lat":  33.2503,
+                      "lon":  126.41216
+                  },
+                  {
+                      "name":  "엉덩물계곡",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "계곡",
+                      "lat":  33.24885,
+                      "lon":  126.41284
+                  },
+                  {
+                      "name":  "갯깍 주상절리",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "바다 · 지질",
+                      "lat":  33.24143,
+                      "lon":  126.39787
+                  },
+                  {
+                      "name":  "논짓물",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "바다",
+                      "lat":  33.23721,
+                      "lon":  126.38929
+                  },
+                  {
+                      "name":  "예래생태공원",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "공원",
+                      "lat":  33.24616,
+                      "lon":  126.39631
+                  },
+                  {
+                      "name":  "베릿내오름",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "오름",
+                      "lat":  33.24733,
+                      "lon":  126.42151
+                  },
+                  {
+                      "name":  "하원수로길",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "산책",
+                      "lat":  33.31517,
+                      "lon":  126.4764
+                  },
+                  {
+                      "name":  "법화사",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "사찰",
+                      "lat":  33.26533,
+                      "lon":  126.4576
+                  },
+                  {
+                      "name":  "존자암",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "사찰",
+                      "lat":  33.34794,
+                      "lon":  126.48225
+                  },
+                  {
+                      "name":  "한라산 영실코스",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "산 · 등산",
+                      "lat":  33.35948,
+                      "lon":  126.51287
+                  },
+                  {
+                      "name":  "한라산 돈내코코스",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "산 · 등산",
+                      "lat":  33.33653,
+                      "lon":  126.55287
+                  },
+                  {
+                      "name":  "돈내코 원앙폭포",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "폭포 · 계곡",
+                      "lat":  33.30018,
+                      "lon":  126.58133
+                  },
+                  {
+                      "name":  "1100고지 습지",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "습지",
+                      "lat":  33.35802,
+                      "lon":  126.46363
+                  },
+                  {
+                      "name":  "서귀포자연휴양림",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "숲",
+                      "lat":  33.31151,
+                      "lon":  126.45875
+                  },
+                  {
+                      "name":  "서귀포 치유의 숲",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "숲",
+                      "lat":  33.29457,
+                      "lon":  126.52521
+                  },
+                  {
+                      "name":  "큰엉해안경승지",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "바다 · 산책",
+                      "lat":  33.27335,
+                      "lon":  126.70371
+                  },
+                  {
+                      "name":  "위미 동백군락지",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "숲 · 산책",
+                      "lat":  33.27294,
+                      "lon":  126.67473
+                  },
+                  {
+                      "name":  "위미항",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "항구",
+                      "lat":  33.26992,
+                      "lon":  126.66145
+                  },
+                  {
+                      "name":  "남원포구",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "포구",
+                      "lat":  33.27797,
+                      "lon":  126.71886
+                  },
+                  {
+                      "name":  "휴애리자연생활공원",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "테마공원",
+                      "lat":  33.30941,
+                      "lon":  126.63541
+                  },
+                  {
+                      "name":  "물영아리오름",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "오름 · 습지",
+                      "lat":  33.36839,
+                      "lon":  126.69206
+                  },
+                  {
+                      "name":  "머체왓숲길",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "숲 · 산책",
+                      "lat":  33.33235,
+                      "lon":  126.66632
+                  },
+                  {
+                      "name":  "이승이오름",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "오름",
+                      "lat":  33.34015,
+                      "lon":  126.62224
+                  },
+                  {
+                      "name":  "고살리숲길",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "숲 · 산책",
+                      "lat":  33.31688,
+                      "lon":  126.59789
+                  },
+                  {
+                      "name":  "표선해수욕장",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "바다",
+                      "lat":  33.32751,
+                      "lon":  126.83742
+                  },
+                  {
+                      "name":  "표선 당케포구",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "포구",
+                      "lat":  33.32645,
+                      "lon":  126.84674
+                  },
+                  {
+                      "name":  "제주민속촌",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "민속마을",
+                      "lat":  33.3224,
+                      "lon":  126.8423
+                  },
+                  {
+                      "name":  "성읍민속마을",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "민속마을",
+                      "lat":  33.38496,
+                      "lon":  126.8015
+                  },
+                  {
+                      "name":  "영주산",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "오름",
+                      "lat":  33.40457,
+                      "lon":  126.79624
+                  },
+                  {
+                      "name":  "백약이오름",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "오름",
+                      "lat":  33.43681,
+                      "lon":  126.78976
+                  },
+                  {
+                      "name":  "따라비오름",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "오름",
+                      "lat":  33.38871,
+                      "lon":  126.75286
+                  },
+                  {
+                      "name":  "큰사슴이오름",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "오름",
+                      "lat":  33.39914,
+                      "lon":  126.72954
+                  },
+                  {
+                      "name":  "개오름",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "오름",
+                      "lat":  33.42257,
+                      "lon":  126.77186
+                  },
+                  {
+                      "name":  "가시리 녹산로",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "도로 · 꽃길",
+                      "lat":  33.39256,
+                      "lon":  126.72287
+                  },
+                  {
+                      "name":  "조랑말체험공원",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "체험",
+                      "lat":  33.3831,
+                      "lon":  126.73628
+                  },
+                  {
+                      "name":  "갑마장길",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "산책",
+                      "lat":  33.39458,
+                      "lon":  126.7419
+                  },
+                  {
+                      "name":  "붉은오름자연휴양림",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "숲",
+                      "lat":  33.40149,
+                      "lon":  126.67536
+                  },
+                  {
+                      "name":  "제주허브동산",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "정원",
+                      "lat":  33.33039,
+                      "lon":  126.81519
+                  },
+                  {
+                      "name":  "송악산",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "오름 · 바다",
+                      "lat":  33.19908,
+                      "lon":  126.28979
+                  },
+                  {
+                      "name":  "섯알오름",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "오름 · 유적",
+                      "lat":  33.20649,
+                      "lon":  126.28122
+                  },
+                  {
+                      "name":  "알뜨르비행장",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "유적",
+                      "lat":  33.20472,
+                      "lon":  126.27153
+                  },
+                  {
+                      "name":  "마라도",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "섬",
+                      "lat":  33.11849,
+                      "lon":  126.26717
+                  },
+                  {
+                      "name":  "가파도",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "섬",
+                      "lat":  33.17001,
+                      "lon":  126.27141
+                  },
+                  {
+                      "name":  "모슬포항",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "항구",
+                      "lat":  33.21655,
+                      "lon":  126.24966
+                  },
+                  {
+                      "name":  "모슬봉",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "오름",
+                      "lat":  33.23874,
+                      "lon":  126.25866
+                  },
+                  {
+                      "name":  "대정오일시장",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "시장",
+                      "lat":  33.22046,
+                      "lon":  126.24836
+                  },
+                  {
+                      "name":  "제주추사관",
+                      "area":  "서귀포",
+                      "indoor":  true,
+                      "type":  "기념관",
+                      "lat":  33.24997,
+                      "lon":  126.27822
+                  },
+                  {
+                      "name":  "대정성지",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "유적",
+                      "lat":  33.25356,
+                      "lon":  126.26077
+                  },
+                  {
+                      "name":  "제주곶자왈도립공원",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "숲",
+                      "lat":  33.28895,
+                      "lon":  126.27172
+                  },
+                  {
+                      "name":  "하모해변",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "바다",
+                      "lat":  33.21106,
+                      "lon":  126.26075
+                  },
+                  {
+                      "name":  "신도리 도구리알",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "바다",
+                      "lat":  33.27297,
+                      "lon":  126.17207
+                  },
+                  {
+                      "name":  "노을해안로",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "해안도로",
+                      "lat":  33.24875,
+                      "lon":  126.20035
+                  },
+                  {
+                      "name":  "영락리 해안",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "바다",
+                      "lat":  33.29942,
+                      "lon":  126.16752
+                  },
+                  {
+                      "name":  "제주올레 4코스(표선~남원)",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "올레길",
+                      "lat":  33.28376,
+                      "lon":  126.74885
+                  },
+                  {
+                      "name":  "제주올레 5코스(남원~쇠소깍)",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "올레길",
+                      "lat":  33.27078,
+                      "lon":  126.66744
+                  },
+                  {
+                      "name":  "제주올레 6코스(쇠소깍~서귀포)",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "올레길",
+                      "lat":  33.24379,
+                      "lon":  126.58183
+                  },
+                  {
+                      "name":  "제주올레 7코스(서귀포~월평)",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "올레길",
+                      "lat":  33.24296,
+                      "lon":  126.53254
+                  },
+                  {
+                      "name":  "제주올레 8코스(월평~대평)",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "올레길",
+                      "lat":  33.24379,
+                      "lon":  126.41652
+                  },
+                  {
+                      "name":  "제주올레 11코스(모슬포~무릉)",
+                      "area":  "서귀포",
+                      "indoor":  false,
+                      "type":  "올레길",
+                      "lat":  33.25287,
+                      "lon":  126.25818
+                  }
+              ]
 }

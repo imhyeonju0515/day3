@@ -26,7 +26,7 @@
       <option value="false">야외</option>
     </select>
     <button type="submit">지도에 표시</button>
-    <span id="msg">※ 위치는 지역 중심 근처의 대략적인 자리예요(실제 좌표 아님).</span>
+    <span id="msg">※ 위치는 카카오 장소 검색 결과 기준이며, 마을·해안·올레길은 대표 지점이에요.</span>
   </form>
   <div id="map"></div>
 
@@ -58,7 +58,7 @@
           L.marker([s.lat, s.lon]).bindPopup(popup).addTo(markers);
         }
         map.fitBounds(markers.getLayers().map((m) => m.getLatLng()), { padding: [40, 40] });
-        msg.textContent = data.count + '곳 표시 (위치는 대략적인 자리)';
+        msg.textContent = data.count + '곳 표시';
       } catch {
         msg.textContent = '불러오지 못했어요. /api/spots 가 실행 중인지 확인하세요.';
       }
