@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>제주 여행 추천 에이전트</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; height: 100vh; display: flex; flex-direction: column; font-family: sans-serif; background: #fff8ef; }
+    header { background: #ff8a3d; color: #fff; padding: .7rem 1rem; font-weight: bold; text-align: center; }
+    #log { flex: 1; min-height: 120px; overflow-y: auto; padding: .8rem; display: flex; flex-direction: column; gap: .5rem; }
+    .msg { max-width: 85%; padding: .55rem .85rem; border-radius: 14px; line-height: 1.5; white-space: pre-wrap; word-break: break-word; }
+    .me { align-self: flex-end; background: #ffd9a8; }
+    .bot { align-self: flex-start; background: #e9f6f4; }
+    .tool { align-self: flex-start; font-size: .8rem; color: #666; background: #f1f1f1; padding: .25rem .6rem; border-radius: 999px; }
+    form { display: flex; gap: .5rem; padding: .6rem; border-top: 1px solid #eee; background: #fff; }
+    input { flex: 1; padding: .6rem .8rem; font-size: 1rem; border: 1px solid #ddd; border-radius: 999px; }
+    button { padding: .6rem 1.1rem; font-size: 1rem; border: 0; border-radius: 999px; background: #ff8a3d; color: #fff; cursor: pointer; }
+    button:disabled { opacity: .5; cursor: wait; }
+    #map { height: 38vh; min-height: 200px; }
+  </style>
+</head>
+<body>
+  <header>🍊 제주 여행 추천 에이전트</header>
+  <div id="log"></div>
+  <form id="form">
+    <input id="input" type="text" placeholder="예: 오늘 서귀포에서 어디 가면 좋을까?" autocomplete="off" required>
+    <button id="send" type="submit">보내기</button>
+  </form>
+  <div id="map"></div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script>
+    const $ = (id) => document.getElementById(id);
+    const map = L.map('map').setView([33.38, 126.55], 9);
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; OpenStreetMap contributors', maxZoom: 18,
+    }).addTo(map);
+    const pins = L.layerGroup().addTo(map);
+
+    function add(text, cls) {
+      const div = document.createElement('div');
+      div.className = cls;
+      div.textContent = text;   // textContent 로 넣어 HTML 이 해석되지 않게 함
+      $('log').appendChild(div);
+      $('log').scrollTop = $('log').scrollHeight;
+    }
+
+    $('form').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const message = $('input').value.trim();
+      if (!message) return;
+      add(message, 'msg me');
+      $('input').value = '';
+      $('send').disabled = true;
+      add('생각 중…', 'tool');
+      const waiting = $('log').lastChild;
+      try {
+        const res = await fetch('/api/agent', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ message }),
+        });
+        const data = await res.json();
+        waiting.remove();
+        if (data.error) { add('오류: ' + data.error, 'msg bot'); return; }
+        for (const c of data.calls) {
+          add('🔧 ' + c.tool + '(' + Object.entries(c.args).map(([k, v]) => k + '=' + v).join(', ') + ')', 'tool');
+        }
+        add(data.answer || '(답변이 비어 있어요)', 'msg bot');
+        pins.clearLayers();
+        for (const s of data.spots) {
+          const d = document.createElement('div');
+          const b = document.createElement('b');
+          b.textContent = s.name;
+          d.append(b, document.createElement('br'), s.area + ' · ' + (s.indoor ? '실내' : '야외'), document.createElement('br'), s.description);
+          L.marker([s.lat, s.lon]).bindPopup(d).addTo(pins);
+        }
+        if (data.spots.length) map.fitBounds(pins.getLayers().map((m) => m.getLatLng()), { padding: [30, 30] });
+      } catch {
+        waiting.remove();
+        add('서버에 연결하지 못했어요. /api/agent 가 실행 중인지 확인하세요.', 'msg bot');
+      } finally {
+        $('send').disabled = false;
+        $('input').focus();
+      }
+    });
+  </script>
+</body>
+</html>
