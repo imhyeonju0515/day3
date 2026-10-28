@@ -4,7 +4,7 @@
 const { tools, handlers, find_spots_for_map } = require('./tools');
 
 // 앞의 모델이 붐비면 뒤의 모델로 넘어갑니다. 첫 번째는 환경변수 GEMINI_MODEL 로 바꿀 수 있어요.
-const MODELS = [process.env.GEMINI_MODEL || 'gemini-3.8-flash', 'gemini-3.6-flash', 'gemini-2.5-flash'];
+const MODELS = [process.env.GEMINI_MODEL || 'gemini-3.8-flash', 'gemini-3.6-flash', 'gemini-3.5-flash-lite'];
 const RETRYABLE = [404, 429, 500, 503, 504];   // 404: 모델 이름이 없을 때도 다음 모델로
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 const CALL_TIMEOUT_MS = 20000;   // Gemini 한 번 호출 최대 시간
@@ -62,6 +62,7 @@ async function callGemini(key, contents, state) {
         if (timedOut) e.status = 504;
         if (!RETRYABLE.includes(e.status)) throw e;
         lastErr = e;
+        state.log.push({ model: MODELS[i], status: e.status, message: String(e.message).slice(0, 160) });
         if (timedOut || timeLeft() < 3000) break;   // 시간 초과는 같은 모델로 다시 하지 않고 다음 모델로
         if (attempt === 0) await sleep(700);
       }
@@ -85,7 +86,7 @@ module.exports = async (req, res) => {
   if (!message) return res.status(400).json({ error: '메시지(message)가 필요합니다.' });
 
   const contents = [{ role: 'user', parts: [{ text: message }] }];
-  const state = { i: 0, locked: false, deadline: Date.now() + TOTAL_MS };   // 어느 모델을 쓰는 중인지
+  const state = { i: 0, locked: false, deadline: Date.now() + TOTAL_MS, log: [] };   // 어느 모델을 쓰는 중인지
   const calls = [];   // 화면에 보여 줄 "어떤 도구를 불렀는지" 기록
   const pins = [];    // 지도에 찍을 장소
   let weather = null; // 화면의 날씨 카드용(가장 최근 get_weather 결과)
@@ -122,6 +123,6 @@ module.exports = async (req, res) => {
     return res.status(200).json({ answer: '도구를 너무 많이 불러서 중단했어요. 질문을 조금 더 구체적으로 해 주세요.', calls, spots: pins, weather });
   } catch (e) {
     const busy = [503, 504, 429].includes(e.status);
-    return res.status(busy ? 503 : 502).json({ error: busy ? 'AI 서버가 지금 붐벼요. 잠시 뒤 다시 질문해 주세요.' : e.message });
+    return res.status(busy ? 503 : 502).json({ error: busy ? 'AI 서버가 지금 붐벼요. 잠시 뒤 다시 질문해 주세요.' : e.message, tried: state.log });
   }
 };
