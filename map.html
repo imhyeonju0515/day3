@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>제주 관광지 지도</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: sans-serif; display: flex; flex-direction: column; height: 100vh; }
+    form { display: flex; gap: .5rem; align-items: center; padding: .6rem; background: #fff8ef; border-bottom: 1px solid #eee; flex-wrap: wrap; }
+    select, button { padding: .45rem .8rem; font-size: 1rem; }
+    button { border: 0; border-radius: 6px; background: #ff8a3d; color: #fff; cursor: pointer; }
+    #msg { color: #666; font-size: .9rem; }
+    #map { flex: 1; }
+  </style>
+</head>
+<body>
+  <form id="form">
+    <select id="area">
+      <option>동쪽</option><option>서쪽</option><option>서귀포</option><option>제주시</option>
+    </select>
+    <select id="indoor">
+      <option value="">실내/야외 전체</option>
+      <option value="true">실내</option>
+      <option value="false">야외</option>
+    </select>
+    <button type="submit">지도에 표시</button>
+    <span id="msg">※ 위치는 지역 중심 근처의 대략적인 자리예요(실제 좌표 아님).</span>
+  </form>
+  <div id="map"></div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script>
+    const map = L.map('map').setView([33.38, 126.55], 10);
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; OpenStreetMap contributors', maxZoom: 18,
+    }).addTo(map);
+    const markers = L.layerGroup().addTo(map);
+    const msg = document.getElementById('msg');
+
+    document.getElementById('form').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const params = new URLSearchParams({ area: area.value });
+      if (indoor.value) params.set('indoor', indoor.value);
+      markers.clearLayers();
+      try {
+        const res = await fetch('/api/spots?' + params);
+        const data = await res.json();
+        if (data.error) { msg.textContent = data.error; return; }
+        if (!data.count) { msg.textContent = '조건에 맞는 장소가 목록에 없어요.'; return; }
+        for (const s of data.spots) {
+          const popup = document.createElement('div');   // textContent 로 넣어 HTML 이 해석되지 않게 함
+          const title = document.createElement('b');
+          title.textContent = s.name;
+          popup.append(title, document.createElement('br'),
+            s.area + ' · ' + (s.indoor ? '실내' : '야외'), document.createElement('br'), s.description);
+          L.marker([s.lat, s.lon]).bindPopup(popup).addTo(markers);
+        }
+        map.fitBounds(markers.getLayers().map((m) => m.getLatLng()), { padding: [40, 40] });
+        msg.textContent = data.count + '곳 표시 (위치는 대략적인 자리)';
+      } catch {
+        msg.textContent = '불러오지 못했어요. /api/spots 가 실행 중인지 확인하세요.';
+      }
+    });
+  </script>
+</body>
+</html>
