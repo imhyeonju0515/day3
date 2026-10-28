@@ -55,6 +55,50 @@ const find_spots_tool = {
   },
 };
 
+// ---- find_restaurants: restaurants.json (scripts/restaurants.ps1 로 만든 지역별 20곳) ----
+let restaurants = [];
+try { restaurants = require('../restaurants.json').restaurants; } catch { /* 데이터 파일을 만들기 전 */ }
+
+function pickRestaurants({ area, keyword } = {}, withCoords) {
+  if (!AREAS.includes(area)) {
+    return { error: 'area 는 ' + AREAS.join(' · ') + ' 중 하나여야 합니다.' };
+  }
+  if (!restaurants.length) return { error: '맛집 데이터가 아직 준비되지 않았습니다.' };
+  const word = String(keyword || '').trim();
+  const found = restaurants
+    .filter((r) => r.area === area)
+    .filter((r) => !word || (r.name + ' ' + r.category).includes(word))
+    .slice(0, MAX_RESULTS)
+    .map((r) => ({
+      name: r.name,
+      area: r.area,
+      category: r.category,
+      address: r.address,
+      kind: 'restaurant',
+      ...(withCoords && { lat: r.lat, lon: r.lon }),
+    }));
+  return { count: found.length, restaurants: found };
+}
+
+const find_restaurants = (input) => pickRestaurants(input, false);
+const find_restaurants_for_map = (input) => pickRestaurants(input, true);
+
+const find_restaurants_tool = {
+  name: 'find_restaurants',
+  description:
+    '제주 맛집 목록에서 지역(동쪽 · 서쪽 · 서귀포 · 제주시)과 음식 종류 키워드로 식당을 골라 최대 8곳의 ' +
+    '이름 · 지역 · 분류 · 주소를 돌려준다. 지역마다 20곳이 목록에 있고 목록 밖 식당은 없다. ' +
+    '순위나 평점은 없으므로 "가장 맛있다"고 단정하지 말고, 결과에 없는 식당은 지어내지 않는다. 영업시간은 모르니 방문 전 확인을 권한다.',
+  input_schema: {
+    type: 'object',
+    properties: {
+      area: { type: 'string', enum: AREAS, description: '찾을 지역' },
+      keyword: { type: 'string', description: '음식 종류나 메뉴(예: 흑돼지, 해산물, 국수). 생략하면 전체.' },
+    },
+    required: ['area'],
+  },
+};
+
 // ---- get_weather: Open-Meteo (키 없음, 비상업·하루 1만 회 미만) ----
 const AREA_CENTER = { 동쪽: [33.46, 126.88], 서쪽: [33.36, 126.3], 서귀포: [33.25, 126.56], 제주시: [33.51, 126.52] };
 
@@ -122,7 +166,10 @@ const get_weather_tool = {
   },
 };
 
-const tools = [find_spots_tool, get_weather_tool];
-const handlers = { find_spots, get_weather };
+const tools = [find_spots_tool, find_restaurants_tool, get_weather_tool];
+const handlers = { find_spots, find_restaurants, get_weather };
 
-module.exports = { find_spots, find_spots_for_map, get_weather, find_spots_tool, get_weather_tool, tools, handlers };
+module.exports = {
+  find_spots, find_spots_for_map, find_restaurants, find_restaurants_for_map, get_weather,
+  find_spots_tool, find_restaurants_tool, get_weather_tool, tools, handlers,
+};

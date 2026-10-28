@@ -47,6 +47,7 @@
     .spot:hover { border-color: var(--brand); transform: translateY(-1px); }
     .spot strong { display: block; font-size: .95rem; margin-bottom: 4px; }
     .tag { display: inline-block; font-size: .72rem; padding: 2px 8px; border-radius: 999px; margin-right: 4px; background: var(--bg); color: var(--muted); }
+    .tag.food { background: #efe8fb; color: #8e5bd6; }
     .tag.in { background: var(--teal-soft); color: var(--teal); } .tag.out { background: var(--brand-soft); color: var(--brand); }
     .spot span.desc { display: block; margin-top: 4px; font-size: .82rem; color: var(--muted); }
 
@@ -95,8 +96,8 @@
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script>
     const $ = (id) => document.getElementById(id);
-    const EXAMPLES = ['오늘 서귀포 어디 가면 좋을까?', '비 오는 날 제주시 실내 추천해줘', '동쪽 야외 코스 알려줘', '서쪽에서 갈만한 곳은?'];
-    const ICONS = { get_weather: '☁️ 날씨 확인', find_spots: '📍 장소 검색' };
+    const EXAMPLES = ['오늘 서귀포 어디 가면 좋을까?', '비 오는 날 제주시 실내 추천해줘', '동쪽에서 흑돼지 맛집 알려줘', '서쪽 구경하고 점심 먹을 곳까지'];
+    const ICONS = { get_weather: '☁️ 날씨 확인', find_spots: '📍 장소 검색', find_restaurants: '🍽️ 맛집 검색' };
     const sky = (t) => (/맑/.test(t) ? '☀️' : /구름/.test(t) ? '⛅' : /안개/.test(t) ? '🌫️' : /눈/.test(t) ? '❄️' : /뇌우/.test(t) ? '⛈️' : /비|소나기|이슬비/.test(t) ? '🌧️' : '🌤️');
 
     const map = L.map('map', { zoomControl: false }).setView([33.38, 126.55], 9);
@@ -128,13 +129,14 @@
       pins.clearLayers();
       const markers = [];
       for (const s of spots) {
-        const color = s.indoor ? '#1d9c8f' : '#ff7a2f';
+        const food = s.kind === 'restaurant';
+        const color = food ? '#8e5bd6' : s.indoor ? '#1d9c8f' : '#ff7a2f';
         const m = L.circleMarker([s.lat, s.lon], { radius: 9, color: '#fff', weight: 2, fillColor: color, fillOpacity: 1 })
           .bindTooltip(s.name).addTo(pins);
         markers.push(m);
         const card = el('button', 'spot', el('strong', '', s.name),
-          el('span', 'tag ' + (s.indoor ? 'in' : 'out'), s.indoor ? '실내' : '야외'), el('span', 'tag', s.area),
-          el('span', 'desc', s.description));
+          food ? el('span', 'tag food', '맛집') : el('span', 'tag ' + (s.indoor ? 'in' : 'out'), s.indoor ? '실내' : '야외'), el('span', 'tag', s.area),
+          el('span', 'desc', food ? s.category + (s.address ? ' · ' + s.address : '') : s.description));
         card.type = 'button';
         card.onclick = () => { map.flyTo([s.lat, s.lon], 13); m.openTooltip(); };
         box.append(card);
