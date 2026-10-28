@@ -48,6 +48,7 @@ module.exports = async (req, res) => {
   const contents = [{ role: 'user', parts: [{ text: message }] }];
   const calls = [];   // 화면에 보여 줄 "어떤 도구를 불렀는지" 기록
   const pins = [];    // 지도에 찍을 장소
+  let weather = null; // 화면의 날씨 카드용(가장 최근 get_weather 결과)
 
   try {
     for (let turn = 0; turn < MAX_TURNS; turn++) {
@@ -59,7 +60,7 @@ module.exports = async (req, res) => {
       const fcs = parts.filter((p) => p.functionCall);
       if (!fcs.length) {
         const answer = parts.map((p) => p.text || '').join('').trim();
-        return res.status(200).json({ answer, calls, spots: pins });
+        return res.status(200).json({ answer, calls, spots: pins, weather });
       }
 
       contents.push(content);   // 모델이 보낸 함수 호출 파트를 그대로 되돌려 줘야 함(생각 서명 포함)
@@ -69,6 +70,7 @@ module.exports = async (req, res) => {
         const args = fc.args || {};
         const result = handler ? await handler(args) : { error: '없는 도구: ' + fc.name };
         calls.push({ tool: fc.name, args });
+        if (fc.name === 'get_weather' && !result.error) weather = result;
         if (fc.name === 'find_spots') {
           const mapped = find_spots_for_map(args);
           if (mapped.spots) for (const s of mapped.spots) if (!pins.some((p) => p.name === s.name)) pins.push(s);
@@ -77,7 +79,7 @@ module.exports = async (req, res) => {
       }
       contents.push({ role: 'user', parts: responses });
     }
-    return res.status(200).json({ answer: '도구를 너무 많이 불러서 중단했어요. 질문을 조금 더 구체적으로 해 주세요.', calls, spots: pins });
+    return res.status(200).json({ answer: '도구를 너무 많이 불러서 중단했어요. 질문을 조금 더 구체적으로 해 주세요.', calls, spots: pins, weather });
   } catch (e) {
     return res.status(e.status === 429 ? 429 : 502).json({ error: e.message });
   }

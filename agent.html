@@ -4,87 +4,180 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>제주 여행 추천 에이전트</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
   <style>
+    :root {
+      --bg: #f4f1ec; --card: #ffffff; --ink: #1f2430; --muted: #7a8194; --line: #e8e4dc;
+      --brand: #ff7a2f; --brand-soft: #fff0e6; --teal: #1d9c8f; --teal-soft: #e3f5f2; --shadow: 0 8px 30px rgba(31, 36, 48, .08);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #14171f; --card: #1d212c; --ink: #eceef4; --muted: #98a0b3; --line: #2b3040; --brand-soft: #3a2518; --teal-soft: #14302d; --shadow: 0 8px 30px rgba(0, 0, 0, .35); }
+    }
     * { box-sizing: border-box; }
-    body { margin: 0; height: 100vh; display: flex; flex-direction: column; font-family: sans-serif; background: #fff8ef; }
-    header { background: #ff8a3d; color: #fff; padding: .7rem 1rem; font-weight: bold; text-align: center; }
-    #log { flex: 1; min-height: 120px; overflow-y: auto; padding: .8rem; display: flex; flex-direction: column; gap: .5rem; }
-    .msg { max-width: 85%; padding: .55rem .85rem; border-radius: 14px; line-height: 1.5; white-space: pre-wrap; word-break: break-word; }
-    .me { align-self: flex-end; background: #ffd9a8; }
-    .bot { align-self: flex-start; background: #e9f6f4; }
-    .tool { align-self: flex-start; font-size: .8rem; color: #666; background: #f1f1f1; padding: .25rem .6rem; border-radius: 999px; }
-    form { display: flex; gap: .5rem; padding: .6rem; border-top: 1px solid #eee; background: #fff; }
-    input { flex: 1; padding: .6rem .8rem; font-size: 1rem; border: 1px solid #ddd; border-radius: 999px; }
-    button { padding: .6rem 1.1rem; font-size: 1rem; border: 0; border-radius: 999px; background: #ff8a3d; color: #fff; cursor: pointer; }
-    button:disabled { opacity: .5; cursor: wait; }
-    #map { height: 38vh; min-height: 200px; }
+    body { margin: 0; height: 100vh; font-family: 'Noto Sans KR', system-ui, sans-serif; background: var(--bg); color: var(--ink); }
+    .app { height: 100%; display: grid; grid-template-columns: minmax(340px, 460px) 1fr; gap: 16px; padding: 16px; }
+    .panel { background: var(--card); border-radius: 20px; box-shadow: var(--shadow); overflow: hidden; display: flex; flex-direction: column; min-height: 0; }
+
+    .head { padding: 18px 20px 14px; border-bottom: 1px solid var(--line); }
+    .head h1 { margin: 0; font-size: 1.15rem; }
+    .head p { margin: 4px 0 0; font-size: .84rem; color: var(--muted); }
+
+    #log { flex: 1; overflow-y: auto; padding: 16px 16px 8px; display: flex; flex-direction: column; gap: 10px; scroll-behavior: smooth; }
+    .msg { max-width: 88%; padding: 10px 14px; border-radius: 16px; line-height: 1.6; font-size: .95rem; white-space: pre-wrap; word-break: break-word; }
+    .me { align-self: flex-end; background: var(--brand); color: #fff; border-bottom-right-radius: 4px; }
+    .bot { align-self: flex-start; background: var(--bg); border-bottom-left-radius: 4px; }
+    .err { align-self: flex-start; background: #fdecec; color: #b42323; border-radius: 12px; padding: 10px 14px; font-size: .88rem; }
+    .steps { align-self: flex-start; display: flex; flex-wrap: wrap; gap: 6px; }
+    .pill { font-size: .78rem; padding: 4px 10px; border-radius: 999px; background: var(--teal-soft); color: var(--teal); font-weight: 500; }
+    .typing { align-self: flex-start; display: flex; gap: 5px; padding: 12px 14px; background: var(--bg); border-radius: 16px; }
+    .typing i { width: 7px; height: 7px; border-radius: 50%; background: var(--muted); animation: blink 1.2s infinite ease-in-out; }
+    .typing i:nth-child(2) { animation-delay: .15s; } .typing i:nth-child(3) { animation-delay: .3s; }
+    @keyframes blink { 0%, 80%, 100% { opacity: .25; transform: translateY(0); } 40% { opacity: 1; transform: translateY(-3px); } }
+
+    .weather { align-self: stretch; display: flex; align-items: center; gap: 14px; padding: 12px 16px; border-radius: 16px; background: linear-gradient(135deg, var(--brand-soft), var(--teal-soft)); }
+    .weather .icon { font-size: 2.3rem; line-height: 1; }
+    .weather .temp { font-size: 1.6rem; font-weight: 700; line-height: 1.1; }
+    .weather .meta { font-size: .8rem; color: var(--muted); line-height: 1.5; }
+    .weather b { color: var(--ink); }
+
+    .spots { align-self: stretch; display: grid; gap: 8px; }
+    .spot { text-align: left; font: inherit; color: inherit; cursor: pointer; padding: 10px 14px; border: 1px solid var(--line); border-radius: 14px; background: var(--card); transition: border-color .15s, transform .15s; }
+    .spot:hover { border-color: var(--brand); transform: translateY(-1px); }
+    .spot strong { display: block; font-size: .95rem; margin-bottom: 4px; }
+    .tag { display: inline-block; font-size: .72rem; padding: 2px 8px; border-radius: 999px; margin-right: 4px; background: var(--bg); color: var(--muted); }
+    .tag.in { background: var(--teal-soft); color: var(--teal); } .tag.out { background: var(--brand-soft); color: var(--brand); }
+    .spot span.desc { display: block; margin-top: 4px; font-size: .82rem; color: var(--muted); }
+
+    .chips { display: flex; flex-wrap: wrap; gap: 8px; padding: 4px 16px 10px; }
+    .chip { font: inherit; font-size: .83rem; padding: 7px 12px; border-radius: 999px; border: 1px solid var(--line); background: var(--card); color: var(--ink); cursor: pointer; }
+    .chip:hover { border-color: var(--brand); color: var(--brand); }
+
+    form { display: flex; gap: 8px; padding: 12px 16px 16px; border-top: 1px solid var(--line); }
+    input { flex: 1; min-width: 0; font: inherit; padding: 12px 16px; border: 1px solid var(--line); border-radius: 999px; background: var(--bg); color: var(--ink); outline: none; }
+    input:focus { border-color: var(--brand); }
+    #send { font: inherit; font-weight: 700; padding: 0 20px; border: 0; border-radius: 999px; background: var(--brand); color: #fff; cursor: pointer; }
+    #send:disabled { opacity: .5; cursor: wait; }
+
+    #map { height: 100%; border-radius: 20px; }
+    .mapwrap { position: relative; border-radius: 20px; overflow: hidden; box-shadow: var(--shadow); min-height: 0; }
+    .hint { position: absolute; z-index: 500; top: 12px; left: 50%; transform: translateX(-50%); background: var(--card); color: var(--muted); font-size: .8rem; padding: 6px 14px; border-radius: 999px; box-shadow: var(--shadow); pointer-events: none; }
+
+    @media (max-width: 800px) {
+      body { height: auto; }
+      .app { grid-template-columns: 1fr; height: auto; }
+      .panel { height: 78vh; }
+      .mapwrap { height: 45vh; }
+    }
   </style>
 </head>
 <body>
-  <header>🍊 제주 여행 추천 에이전트</header>
-  <div id="log"></div>
-  <form id="form">
-    <input id="input" type="text" placeholder="예: 오늘 서귀포에서 어디 가면 좋을까?" autocomplete="off" required>
-    <button id="send" type="submit">보내기</button>
-  </form>
-  <div id="map"></div>
+  <div class="app">
+    <section class="panel">
+      <div class="head">
+        <h1>🍊 제주 여행 추천</h1>
+        <p>날씨를 확인하고, 그에 맞는 장소를 골라 드려요</p>
+      </div>
+      <div id="log"></div>
+      <div class="chips" id="chips"></div>
+      <form id="form">
+        <input id="input" type="text" placeholder="어디로 가볼까요? 예: 오늘 서귀포 추천해줘" autocomplete="off" required>
+        <button id="send" type="submit">보내기</button>
+      </form>
+    </section>
+    <section class="mapwrap">
+      <div class="hint" id="hint">추천한 장소가 지도에 표시돼요</div>
+      <div id="map"></div>
+    </section>
+  </div>
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script>
     const $ = (id) => document.getElementById(id);
-    const map = L.map('map').setView([33.38, 126.55], 9);
+    const EXAMPLES = ['오늘 서귀포 어디 가면 좋을까?', '비 오는 날 제주시 실내 추천해줘', '동쪽 야외 코스 알려줘', '서쪽에서 갈만한 곳은?'];
+    const ICONS = { get_weather: '☁️ 날씨 확인', find_spots: '📍 장소 검색' };
+    const sky = (t) => (/맑/.test(t) ? '☀️' : /구름/.test(t) ? '⛅' : /안개/.test(t) ? '🌫️' : /눈/.test(t) ? '❄️' : /뇌우/.test(t) ? '⛈️' : /비|소나기|이슬비/.test(t) ? '🌧️' : '🌤️');
+
+    const map = L.map('map', { zoomControl: false }).setView([33.38, 126.55], 9);
+    L.control.zoom({ position: 'bottomright' }).addTo(map);
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '&copy; OpenStreetMap contributors', maxZoom: 18,
     }).addTo(map);
     const pins = L.layerGroup().addTo(map);
 
-    function add(text, cls) {
-      const div = document.createElement('div');
-      div.className = cls;
-      div.textContent = text;   // textContent 로 넣어 HTML 이 해석되지 않게 함
-      $('log').appendChild(div);
-      $('log').scrollTop = $('log').scrollHeight;
+    // el('div', 'class', 자식...) — 문자열은 textContent 로만 들어가 HTML 이 해석되지 않음
+    function el(tag, cls, ...kids) {
+      const e = document.createElement(tag);
+      if (cls) e.className = cls;
+      e.append(...kids);
+      return e;
+    }
+    function put(node) { $('log').appendChild(node); $('log').scrollTop = $('log').scrollHeight; return node; }
+
+    function weatherCard(w) {
+      const meta = el('div', 'meta');
+      meta.append(el('b', '', w.area + ' · ' + w.weather), document.createElement('br'),
+        '체감 ' + w.feels_like_c + '° · 바람 ' + w.wind_kmh + 'km/h', document.createElement('br'),
+        '오늘 ' + w.today_min_c + '~' + w.today_max_c + '° · 강수확률 ' + w.today_rain_chance_percent + '%');
+      return el('div', 'weather', el('div', 'icon', sky(w.weather)), el('div', 'temp', w.temperature_c + '°'), meta);
     }
 
-    $('form').addEventListener('submit', async (e) => {
-      e.preventDefault();
-      const message = $('input').value.trim();
-      if (!message) return;
-      add(message, 'msg me');
-      $('input').value = '';
+    function spotCards(spots) {
+      const box = el('div', 'spots');
+      pins.clearLayers();
+      const markers = [];
+      for (const s of spots) {
+        const color = s.indoor ? '#1d9c8f' : '#ff7a2f';
+        const m = L.circleMarker([s.lat, s.lon], { radius: 9, color: '#fff', weight: 2, fillColor: color, fillOpacity: 1 })
+          .bindTooltip(s.name).addTo(pins);
+        markers.push(m);
+        const card = el('button', 'spot', el('strong', '', s.name),
+          el('span', 'tag ' + (s.indoor ? 'in' : 'out'), s.indoor ? '실내' : '야외'), el('span', 'tag', s.area),
+          el('span', 'desc', s.description));
+        card.type = 'button';
+        card.onclick = () => { map.flyTo([s.lat, s.lon], 13); m.openTooltip(); };
+        box.append(card);
+      }
+      if (markers.length) { map.fitBounds(markers.map((m) => m.getLatLng()), { padding: [50, 50] }); $('hint').style.display = 'none'; }
+      return box;
+    }
+
+    async function ask(message) {
+      put(el('div', 'msg me', message));
       $('send').disabled = true;
-      add('생각 중…', 'tool');
-      const waiting = $('log').lastChild;
+      const typing = put(el('div', 'typing', el('i'), el('i'), el('i')));
       try {
-        const res = await fetch('/api/agent', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ message }),
-        });
+        const res = await fetch('/api/agent', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ message }) });
         const data = await res.json();
-        waiting.remove();
-        if (data.error) { add('오류: ' + data.error, 'msg bot'); return; }
-        for (const c of data.calls) {
-          add('🔧 ' + c.tool + '(' + Object.entries(c.args).map(([k, v]) => k + '=' + v).join(', ') + ')', 'tool');
-        }
-        add(data.answer || '(답변이 비어 있어요)', 'msg bot');
-        pins.clearLayers();
-        for (const s of data.spots) {
-          const d = document.createElement('div');
-          const b = document.createElement('b');
-          b.textContent = s.name;
-          d.append(b, document.createElement('br'), s.area + ' · ' + (s.indoor ? '실내' : '야외'), document.createElement('br'), s.description);
-          L.marker([s.lat, s.lon]).bindPopup(d).addTo(pins);
-        }
-        if (data.spots.length) map.fitBounds(pins.getLayers().map((m) => m.getLatLng()), { padding: [30, 30] });
+        typing.remove();
+        if (data.error) { put(el('div', 'err', '문제가 생겼어요: ' + data.error)); return; }
+        if (data.calls.length) put(el('div', 'steps', ...data.calls.map((c) => el('span', 'pill', ICONS[c.tool] || c.tool))));
+        if (data.weather) put(weatherCard(data.weather));
+        put(el('div', 'msg bot', data.answer || '(답변이 비어 있어요)'));
+        if (data.spots.length) put(spotCards(data.spots));
       } catch {
-        waiting.remove();
-        add('서버에 연결하지 못했어요. /api/agent 가 실행 중인지 확인하세요.', 'msg bot');
+        typing.remove();
+        put(el('div', 'err', '서버에 연결하지 못했어요. 잠시 뒤 다시 시도해 주세요.'));
       } finally {
         $('send').disabled = false;
         $('input').focus();
       }
+    }
+
+    for (const q of EXAMPLES) {
+      const b = el('button', 'chip', q);
+      b.type = 'button';
+      b.onclick = () => ask(q);
+      $('chips').append(b);
+    }
+    put(el('div', 'msg bot', '안녕하세요! 가고 싶은 지역(동쪽 · 서쪽 · 서귀포 · 제주시)이나 원하는 분위기를 말해 주세요. 지금 날씨를 보고 어울리는 장소를 골라 드릴게요.'));
+    $('form').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const m = $('input').value.trim();
+      if (!m) return;
+      $('input').value = '';
+      ask(m);
     });
   </script>
 </body>
