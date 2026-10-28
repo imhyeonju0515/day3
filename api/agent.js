@@ -3,7 +3,10 @@
 // 키는 Vercel 환경변수 GEMINI_API_KEY (모델은 선택: GEMINI_MODEL) 에서 읽습니다.
 const { tools, handlers, find_spots_for_map } = require('./tools');
 
-const MODEL = process.env.GEMINI_MODEL || 'gemini-3.8-flash';
+// 앞의 모델이 붐비면 뒤의 모델로 넘어갑니다. 첫 번째는 환경변수 GEMINI_MODEL 로 바꿀 수 있어요.
+const MODELS = [process.env.GEMINI_MODEL || 'gemini-3.8-flash', 'gemini-3.6-flash', 'gemini-2.5-flash'];
+const RETRYABLE = [404, 429, 500, 503, 504];   // 404: 모델 이름이 없을 때도 다음 모델로
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 const MAX_TURNS = 5;   // 도구를 부르고 답을 받는 왕복 상한(무한 반복 방지)
 
 const SYSTEM = [
@@ -18,8 +21,8 @@ const SYSTEM = [
 // Claude 형식의 도구 설명(input_schema)을 Gemini 형식(parameters)으로 바꿈
 const declarations = tools.map(({ name, description, input_schema }) => ({ name, description, parameters: input_schema }));
 
-async function callGemini(key, contents) {
-  const res = await fetch('https://generativelanguage.googleapis.com/v1beta/models/' + MODEL + ':generateContent', {
+async function callOnce(key, model, contents) {
+  const res = await fetch('https://generativelanguage.googleapis.com/v1beta/models/' + model + ':generateContent', {
     method: 'POST',
     headers: { 'x-goog-api-key': key, 'Content-Type': 'application/json' },
     body: JSON.stringify({
@@ -37,6 +40,28 @@ async function callGemini(key, contents) {
   return res.json();
 }
 
+// 붐비는 시간(503)·한도(429) 같은 일시 오류는 한 번 더 시도하고, 그래도 안 되면 다음 모델로 넘어감.
+// 함수 호출 기록의 "생각 서명"이 모델에 묶여 있어서, 첫 성공 뒤에는 모델을 바꾸지 않음(state.locked).
+async function callGemini(key, contents, state) {
+  const last = state.locked ? state.i : MODELS.length - 1;
+  let lastErr;
+  for (let i = state.i; i <= last; i++) {
+    for (let attempt = 0; attempt < 2; attempt++) {
+      try {
+        const data = await callOnce(key, MODELS[i], contents);
+        state.i = i;
+        state.locked = true;
+        return data;
+      } catch (e) {
+        if (!RETRYABLE.includes(e.status)) throw e;
+        lastErr = e;
+        if (attempt === 0) await sleep(700);
+      }
+    }
+  }
+  throw lastErr;
+}
+
 module.exports = async (req, res) => {
   if (req.method !== 'POST') return res.status(405).json({ error: 'POST 로 요청해 주세요.' });
   const key = process.env.GEMINI_API_KEY;
@@ -52,13 +77,14 @@ module.exports = async (req, res) => {
   if (!message) return res.status(400).json({ error: '메시지(message)가 필요합니다.' });
 
   const contents = [{ role: 'user', parts: [{ text: message }] }];
+  const state = { i: 0, locked: false };   // 어느 모델을 쓰는 중인지
   const calls = [];   // 화면에 보여 줄 "어떤 도구를 불렀는지" 기록
   const pins = [];    // 지도에 찍을 장소
   let weather = null; // 화면의 날씨 카드용(가장 최근 get_weather 결과)
 
   try {
     for (let turn = 0; turn < MAX_TURNS; turn++) {
-      const data = await callGemini(key, contents);
+      const data = await callGemini(key, contents, state);
       const content = data.candidates && data.candidates[0] && data.candidates[0].content;
       if (!content) return res.status(502).json({ error: '모델이 답을 만들지 못했습니다.' });
 
@@ -87,6 +113,7 @@ module.exports = async (req, res) => {
     }
     return res.status(200).json({ answer: '도구를 너무 많이 불러서 중단했어요. 질문을 조금 더 구체적으로 해 주세요.', calls, spots: pins, weather });
   } catch (e) {
-    return res.status(e.status === 429 ? 429 : 502).json({ error: e.message });
+    const busy = e.status === 503 || e.status === 429;
+    return res.status(busy ? 503 : 502).json({ error: busy ? 'AI 서버가 지금 붐벼요. 잠시 뒤 다시 질문해 주세요.' : e.message });
   }
 };
