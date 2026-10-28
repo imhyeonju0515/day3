@@ -7,6 +7,8 @@ const { tools, handlers, find_spots_for_map } = require('./tools');
 const MODELS = [process.env.GEMINI_MODEL || 'gemini-3.8-flash', 'gemini-3.6-flash', 'gemini-2.5-flash'];
 const RETRYABLE = [404, 429, 500, 503, 504];   // 404: 모델 이름이 없을 때도 다음 모델로
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+const CALL_TIMEOUT_MS = 20000;   // Gemini 한 번 호출 최대 시간
+const TOTAL_MS = 52000;         // 전체 상한(Vercel 제한시간 60초보다 짧게)
 const MAX_TURNS = 5;   // 도구를 부르고 답을 받는 왕복 상한(무한 반복 방지)
 
 const SYSTEM = [
@@ -21,10 +23,11 @@ const SYSTEM = [
 // Claude 형식의 도구 설명(input_schema)을 Gemini 형식(parameters)으로 바꿈
 const declarations = tools.map(({ name, description, input_schema }) => ({ name, description, parameters: input_schema }));
 
-async function callOnce(key, model, contents) {
+async function callOnce(key, model, contents, timeoutMs) {
   const res = await fetch('https://generativelanguage.googleapis.com/v1beta/models/' + model + ':generateContent', {
     method: 'POST',
     headers: { 'x-goog-api-key': key, 'Content-Type': 'application/json' },
+    signal: AbortSignal.timeout(timeoutMs),   // 너무 오래 걸리면 끊고 다음 모델로
     body: JSON.stringify({
       systemInstruction: { parts: [{ text: SYSTEM }] },
       contents,
@@ -43,18 +46,23 @@ async function callOnce(key, model, contents) {
 // 붐비는 시간(503)·한도(429) 같은 일시 오류는 한 번 더 시도하고, 그래도 안 되면 다음 모델로 넘어감.
 // 함수 호출 기록의 "생각 서명"이 모델에 묶여 있어서, 첫 성공 뒤에는 모델을 바꾸지 않음(state.locked).
 async function callGemini(key, contents, state) {
+  const timeLeft = () => state.deadline - Date.now();
   const last = state.locked ? state.i : MODELS.length - 1;
   let lastErr;
   for (let i = state.i; i <= last; i++) {
     for (let attempt = 0; attempt < 2; attempt++) {
       try {
-        const data = await callOnce(key, MODELS[i], contents);
+        if (timeLeft() < 3000) throw Object.assign(new Error('시간 초과'), { status: 504 });
+        const data = await callOnce(key, MODELS[i], contents, Math.min(CALL_TIMEOUT_MS, timeLeft()));
         state.i = i;
         state.locked = true;
         return data;
       } catch (e) {
+        const timedOut = e.name === 'TimeoutError' || e.name === 'AbortError';
+        if (timedOut) e.status = 504;
         if (!RETRYABLE.includes(e.status)) throw e;
         lastErr = e;
+        if (timedOut || timeLeft() < 3000) break;   // 시간 초과는 같은 모델로 다시 하지 않고 다음 모델로
         if (attempt === 0) await sleep(700);
       }
     }
@@ -77,7 +85,7 @@ module.exports = async (req, res) => {
   if (!message) return res.status(400).json({ error: '메시지(message)가 필요합니다.' });
 
   const contents = [{ role: 'user', parts: [{ text: message }] }];
-  const state = { i: 0, locked: false };   // 어느 모델을 쓰는 중인지
+  const state = { i: 0, locked: false, deadline: Date.now() + TOTAL_MS };   // 어느 모델을 쓰는 중인지
   const calls = [];   // 화면에 보여 줄 "어떤 도구를 불렀는지" 기록
   const pins = [];    // 지도에 찍을 장소
   let weather = null; // 화면의 날씨 카드용(가장 최근 get_weather 결과)
@@ -113,7 +121,7 @@ module.exports = async (req, res) => {
     }
     return res.status(200).json({ answer: '도구를 너무 많이 불러서 중단했어요. 질문을 조금 더 구체적으로 해 주세요.', calls, spots: pins, weather });
   } catch (e) {
-    const busy = e.status === 503 || e.status === 429;
+    const busy = [503, 504, 429].includes(e.status);
     return res.status(busy ? 503 : 502).json({ error: busy ? 'AI 서버가 지금 붐벼요. 잠시 뒤 다시 질문해 주세요.' : e.message });
   }
 };

@@ -1,4 +1,4 @@
 {
   "rewrites": [{ "source": "/", "destination": "/agent.html" }],
-  "functions": { "api/agent.js": { "maxDuration": 30 } }
+  "functions": { "api/agent.js": { "maxDuration": 60 } }
 }
