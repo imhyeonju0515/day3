@@ -4,7 +4,7 @@
 const { tools, handlers, find_spots_for_map } = require('./tools');
 
 // 앞의 모델이 붐비면 뒤의 모델로 넘어갑니다. 첫 번째는 환경변수 GEMINI_MODEL 로 바꿀 수 있어요.
-const MODELS = [process.env.GEMINI_MODEL || 'gemini-3.8-flash', 'gemini-3.6-flash', 'gemini-3.5-flash-lite'];
+const MODELS = [process.env.GEMINI_MODEL || 'gemini-3.5-flash-lite', 'gemini-3.6-flash', 'gemini-3.8-flash'];
 const RETRYABLE = [404, 429, 500, 503, 504];   // 404: 모델 이름이 없을 때도 다음 모델로
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 const CALL_TIMEOUT_MS = 20000;   // Gemini 한 번 호출 최대 시간
@@ -47,22 +47,24 @@ async function callOnce(key, model, contents, timeoutMs) {
 // 함수 호출 기록의 "생각 서명"이 모델에 묶여 있어서, 첫 성공 뒤에는 모델을 바꾸지 않음(state.locked).
 async function callGemini(key, contents, state) {
   const timeLeft = () => state.deadline - Date.now();
-  const last = state.locked ? state.i : MODELS.length - 1;
+  const last = state.locked ? state.i : state.models.length - 1;
   let lastErr;
   for (let i = state.i; i <= last; i++) {
     for (let attempt = 0; attempt < 2; attempt++) {
       try {
         if (timeLeft() < 3000) throw Object.assign(new Error('시간 초과'), { status: 504 });
-        const data = await callOnce(key, MODELS[i], contents, Math.min(CALL_TIMEOUT_MS, timeLeft()));
+        const t0 = Date.now();
+        const data = await callOnce(key, state.models[i], contents, Math.min(CALL_TIMEOUT_MS, timeLeft()));
+        state.log.push({ model: state.models[i], ok: true, ms: Date.now() - t0 });
         state.i = i;
         state.locked = true;
         return data;
       } catch (e) {
         const timedOut = e.name === 'TimeoutError' || e.name === 'AbortError';
         if (timedOut) e.status = 504;
-        if (!RETRYABLE.includes(e.status)) throw e;
+        if (!RETRYABLE.includes(e.status)) { state.log.push({ model: state.models[i], status: e.status, message: String(e.message).slice(0, 160) }); throw e; }
         lastErr = e;
-        state.log.push({ model: MODELS[i], status: e.status, message: String(e.message).slice(0, 160) });
+        state.log.push({ model: state.models[i], status: e.status, message: String(e.message).slice(0, 160) });
         if (timedOut || timeLeft() < 3000) break;   // 시간 초과는 같은 모델로 다시 하지 않고 다음 모델로
         if (attempt === 0) await sleep(700);
       }
@@ -86,7 +88,9 @@ module.exports = async (req, res) => {
   if (!message) return res.status(400).json({ error: '메시지(message)가 필요합니다.' });
 
   const contents = [{ role: 'user', parts: [{ text: message }] }];
-  const state = { i: 0, locked: false, deadline: Date.now() + TOTAL_MS, log: [] };   // 어느 모델을 쓰는 중인지
+  // 시험용: body.model 로 모델을 지정할 수 있음(허용 목록 안에서만)
+  const requested = req.body && MODELS.includes(req.body.model) ? req.body.model : null;
+  const state = { i: 0, locked: false, deadline: Date.now() + TOTAL_MS, log: [], models: requested ? [requested] : MODELS };   // 어느 모델을 쓰는 중인지
   const calls = [];   // 화면에 보여 줄 "어떤 도구를 불렀는지" 기록
   const pins = [];    // 지도에 찍을 장소
   let weather = null; // 화면의 날씨 카드용(가장 최근 get_weather 결과)
@@ -101,7 +105,7 @@ module.exports = async (req, res) => {
       const fcs = parts.filter((p) => p.functionCall);
       if (!fcs.length) {
         const answer = parts.map((p) => p.text || '').join('').trim();
-        return res.status(200).json({ answer, calls, spots: pins, weather });
+        return res.status(200).json({ answer, calls, spots: pins, weather, model: state.models[state.i], timing: state.log });
       }
 
       contents.push(content);   // 모델이 보낸 함수 호출 파트를 그대로 되돌려 줘야 함(생각 서명 포함)
