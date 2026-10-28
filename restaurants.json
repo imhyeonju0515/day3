@@ -1,0 +1,725 @@
+{
+    "note":  "Kakao Local search results (FD6). Not a ranking: opening hours / closures change, check before visiting.",
+    "restaurants":  [
+                        {
+                            "name":  "늘봄흑돼지",
+                            "area":  "제주시",
+                            "category":  "한식 · 육류,고기 · 삼겹살",
+                            "address":  "제주특별자치도 제주시 한라대학로 12",
+                            "lat":  33.47948,
+                            "lon":  126.47287,
+                            "url":  "http://place.map.kakao.com/8856076"
+                        },
+                        {
+                            "name":  "먹돌고기국수 제주본점",
+                            "area":  "제주시",
+                            "category":  "한식 · 국수",
+                            "address":  "제주특별자치도 제주시 공항로1길 14",
+                            "lat":  33.50358,
+                            "lon":  126.49796,
+                            "url":  "http://place.map.kakao.com/1588732308"
+                        },
+                        {
+                            "name":  "더비치크랩 제주공항점",
+                            "area":  "제주시",
+                            "category":  "양식 · 해산물",
+                            "address":  "제주특별자치도 제주시 동한두기길 31",
+                            "lat":  33.51678,
+                            "lon":  126.51525,
+                            "url":  "http://place.map.kakao.com/950570694"
+                        },
+                        {
+                            "name":  "바른갈치 제주공항본점",
+                            "area":  "제주시",
+                            "category":  "한식 · 해물,생선",
+                            "address":  "제주특별자치도 제주시 월성로 26",
+                            "lat":  33.50199,
+                            "lon":  126.5048,
+                            "url":  "http://place.map.kakao.com/1418944159"
+                        },
+                        {
+                            "name":  "대춘해장국 본점",
+                            "area":  "제주시",
+                            "category":  "한식 · 해장국",
+                            "address":  "제주특별자치도 제주시 연북로 398",
+                            "lat":  33.48042,
+                            "lon":  126.52377,
+                            "url":  "http://place.map.kakao.com/209751725"
+                        },
+                        {
+                            "name":  "만배회센타",
+                            "area":  "제주시",
+                            "category":  "한식 · 해물,생선 · 회",
+                            "address":  "제주특별자치도 제주시 국기로2길 2-9",
+                            "lat":  33.47907,
+                            "lon":  126.49041,
+                            "url":  "http://place.map.kakao.com/11420943"
+                        },
+                        {
+                            "name":  "우진해장국",
+                            "area":  "제주시",
+                            "category":  "한식 · 해장국",
+                            "address":  "제주특별자치도 제주시 서사로 11",
+                            "lat":  33.51152,
+                            "lon":  126.52,
+                            "url":  "http://place.map.kakao.com/11547525"
+                        },
+                        {
+                            "name":  "정성듬뿍제주국",
+                            "area":  "제주시",
+                            "category":  "한식",
+                            "address":  "제주특별자치도 제주시 무근성7길 16",
+                            "lat":  33.51403,
+                            "lon":  126.5202,
+                            "url":  "http://place.map.kakao.com/13325715"
+                        },
+                        {
+                            "name":  "금돈흑돼지",
+                            "area":  "제주시",
+                            "category":  "한식 · 육류,고기",
+                            "address":  "제주특별자치도 제주시 원노형남1길 16",
+                            "lat":  33.48386,
+                            "lon":  126.48212,
+                            "url":  "http://place.map.kakao.com/2094206401"
+                        },
+                        {
+                            "name":  "국시트멍 제주고기국수",
+                            "area":  "제주시",
+                            "category":  "한식 · 국수",
+                            "address":  "제주특별자치도 제주시 진군길 31-3",
+                            "lat":  33.47937,
+                            "lon":  126.48133,
+                            "url":  "http://place.map.kakao.com/20151552"
+                        },
+                        {
+                            "name":  "크랩잭 제주공항점",
+                            "area":  "제주시",
+                            "category":  "양식 · 해산물 · 바닷가재",
+                            "address":  "제주특별자치도 제주시 서해안로 658",
+                            "lat":  33.51625,
+                            "lon":  126.50719,
+                            "url":  "http://place.map.kakao.com/1052355649"
+                        },
+                        {
+                            "name":  "한라갈치",
+                            "area":  "제주시",
+                            "category":  "한식 · 해물,생선",
+                            "address":  "제주특별자치도 제주시 정존13길 4",
+                            "lat":  33.48574,
+                            "lon":  126.47771,
+                            "url":  "http://place.map.kakao.com/380700013"
+                        },
+                        {
+                            "name":  "동문올레수산",
+                            "area":  "제주시",
+                            "category":  "한식 · 해물,생선 · 회",
+                            "address":  "제주특별자치도 제주시 관덕로14길 10",
+                            "lat":  33.51225,
+                            "lon":  126.52618,
+                            "url":  "http://place.map.kakao.com/1994899330"
+                        },
+                        {
+                            "name":  "자매국수",
+                            "area":  "제주시",
+                            "category":  "한식 · 국수",
+                            "address":  "제주특별자치도 제주시 항골남길 46",
+                            "lat":  33.49858,
+                            "lon":  126.45914,
+                            "url":  "http://place.map.kakao.com/21455793"
+                        },
+                        {
+                            "name":  "오직흑돼지 공항본점",
+                            "area":  "제주시",
+                            "category":  "한식 · 육류,고기",
+                            "address":  "제주특별자치도 제주시 용마로 24",
+                            "lat":  33.51521,
+                            "lon":  126.5063,
+                            "url":  "http://place.map.kakao.com/571064601"
+                        },
+                        {
+                            "name":  "삼대전통고기국수",
+                            "area":  "제주시",
+                            "category":  "한식 · 국수",
+                            "address":  "제주특별자치도 제주시 신대로5길 17",
+                            "lat":  33.49296,
+                            "lon":  126.49858,
+                            "url":  "http://place.map.kakao.com/9810778"
+                        },
+                        {
+                            "name":  "해산물포차",
+                            "area":  "제주시",
+                            "category":  "술집 · 실내포장마차",
+                            "address":  "제주특별자치도 제주시 서광로32길 23",
+                            "lat":  33.49857,
+                            "lon":  126.52911,
+                            "url":  "http://place.map.kakao.com/18590520"
+                        },
+                        {
+                            "name":  "제주어멍 통갈치 제주공항본점",
+                            "area":  "제주시",
+                            "category":  "한식 · 해물,생선",
+                            "address":  "제주특별자치도 제주시 서해안로 372",
+                            "lat":  33.51166,
+                            "lon":  126.48424,
+                            "url":  "http://place.map.kakao.com/1903594998"
+                        },
+                        {
+                            "name":  "원조미풍해장국 본점",
+                            "area":  "제주시",
+                            "category":  "한식 · 해장국",
+                            "address":  "제주특별자치도 제주시 중앙로14길 13",
+                            "lat":  33.51127,
+                            "lon":  126.52288,
+                            "url":  "http://place.map.kakao.com/11291795"
+                        },
+                        {
+                            "name":  "모슬포해안도로식당",
+                            "area":  "제주시",
+                            "category":  "한식 · 해물,생선 · 회",
+                            "address":  "제주특별자치도 제주시 신대로18길 16",
+                            "lat":  33.48474,
+                            "lon":  126.49465,
+                            "url":  "http://place.map.kakao.com/9573975"
+                        },
+                        {
+                            "name":  "커큐민흑돼지",
+                            "area":  "동쪽",
+                            "category":  "한식 · 육류,고기",
+                            "address":  "제주특별자치도 서귀포시 성산읍 일출로 84",
+                            "lat":  33.44979,
+                            "lon":  126.92114,
+                            "url":  "http://place.map.kakao.com/24910446"
+                        },
+                        {
+                            "name":  "가시아방국수",
+                            "area":  "동쪽",
+                            "category":  "한식 · 국수",
+                            "address":  "제주특별자치도 서귀포시 성산읍 섭지코지로 10",
+                            "lat":  33.43861,
+                            "lon":  126.91806,
+                            "url":  "http://place.map.kakao.com/22895321"
+                        },
+                        {
+                            "name":  "대수굴식당",
+                            "area":  "동쪽",
+                            "category":  "양식 · 해산물",
+                            "address":  "제주특별자치도 제주시 구좌읍 대수길 10-4",
+                            "lat":  33.53611,
+                            "lon":  126.83944,
+                            "url":  "http://place.map.kakao.com/1958898133"
+                        },
+                        {
+                            "name":  "갈치공장",
+                            "area":  "동쪽",
+                            "category":  "한식 · 해물,생선",
+                            "address":  "제주특별자치도 제주시 구좌읍 해맞이해안로 1296",
+                            "lat":  33.53191,
+                            "lon":  126.85096,
+                            "url":  "http://place.map.kakao.com/1942763932"
+                        },
+                        {
+                            "name":  "은희네해장국 성산점",
+                            "area":  "동쪽",
+                            "category":  "한식 · 해장국",
+                            "address":  "제주특별자치도 서귀포시 성산읍 환해장성로 803",
+                            "lat":  33.42355,
+                            "lon":  126.91354,
+                            "url":  "http://place.map.kakao.com/1191921751"
+                        },
+                        {
+                            "name":  "소라횟집",
+                            "area":  "동쪽",
+                            "category":  "한식 · 해물,생선 · 회",
+                            "address":  "제주특별자치도 제주시 구좌읍 해맞이해안로 1240-3",
+                            "lat":  33.53246,
+                            "lon":  126.84627,
+                            "url":  "http://place.map.kakao.com/1400643211"
+                        },
+                        {
+                            "name":  "소금바치순이네",
+                            "area":  "동쪽",
+                            "category":  "한식 · 해물,생선",
+                            "address":  "제주특별자치도 제주시 구좌읍 해맞이해안로 2196",
+                            "lat":  33.50365,
+                            "lon":  126.91263,
+                            "url":  "http://place.map.kakao.com/26915572"
+                        },
+                        {
+                            "name":  "서귀피안베이커리",
+                            "area":  "동쪽",
+                            "category":  "간식 · 제과,베이커리",
+                            "address":  "제주특별자치도 서귀포시 성산읍 신양로122번길 17",
+                            "lat":  33.43525,
+                            "lon":  126.92197,
+                            "url":  "http://place.map.kakao.com/231488419"
+                        },
+                        {
+                            "name":  "성산흑돼지두루치기",
+                            "area":  "동쪽",
+                            "category":  "한식 · 육류,고기 · 불고기,두루치기",
+                            "address":  "제주특별자치도 서귀포시 성산읍 한도로 255",
+                            "lat":  33.46619,
+                            "lon":  126.9348,
+                            "url":  "http://place.map.kakao.com/25543698"
+                        },
+                        {
+                            "name":  "꽃가람",
+                            "area":  "동쪽",
+                            "category":  "한식 · 국수",
+                            "address":  "제주특별자치도 서귀포시 성산읍 고성동서로 73",
+                            "lat":  33.4509,
+                            "lon":  126.91497,
+                            "url":  "http://place.map.kakao.com/1113932348"
+                        },
+                        {
+                            "name":  "꼬마해녀의집",
+                            "area":  "동쪽",
+                            "category":  "양식 · 해산물",
+                            "address":  "제주특별자치도 제주시 우도면 우도해안길 810",
+                            "lat":  33.51349,
+                            "lon":  126.95729,
+                            "url":  "http://place.map.kakao.com/367814939"
+                        },
+                        {
+                            "name":  "성산갈치맛집",
+                            "area":  "동쪽",
+                            "category":  "한식 · 해물,생선",
+                            "address":  "제주특별자치도 서귀포시 성산읍 한도로 90",
+                            "lat":  33.46845,
+                            "lon":  126.91745,
+                            "url":  "http://place.map.kakao.com/1213640558"
+                        },
+                        {
+                            "name":  "일출해장국",
+                            "area":  "동쪽",
+                            "category":  "한식 · 해장국",
+                            "address":  "제주특별자치도 서귀포시 성산읍 일출로 274",
+                            "lat":  33.46215,
+                            "lon":  126.93454,
+                            "url":  "http://place.map.kakao.com/1631103498"
+                        },
+                        {
+                            "name":  "청파식당횟집",
+                            "area":  "동쪽",
+                            "category":  "한식 · 해물,생선 · 회",
+                            "address":  "제주특별자치도 제주시 구좌읍 세평항로 12",
+                            "lat":  33.52453,
+                            "lon":  126.85366,
+                            "url":  "http://place.map.kakao.com/17357777"
+                        },
+                        {
+                            "name":  "맛나식당",
+                            "area":  "동쪽",
+                            "category":  "한식 · 해물,생선",
+                            "address":  "제주특별자치도 서귀포시 성산읍 동류암로 41",
+                            "lat":  33.4486,
+                            "lon":  126.91608,
+                            "url":  "http://place.map.kakao.com/8970084"
+                        },
+                        {
+                            "name":  "제주본연흑돼지 성산본점",
+                            "area":  "동쪽",
+                            "category":  "한식 · 육류,고기",
+                            "address":  "제주특별자치도 서귀포시 성산읍 성산등용로 2",
+                            "lat":  33.46442,
+                            "lon":  126.93413,
+                            "url":  "http://place.map.kakao.com/1925693081"
+                        },
+                        {
+                            "name":  "삼무국수 성산점",
+                            "area":  "동쪽",
+                            "category":  "한식 · 국수",
+                            "address":  "제주특별자치도 서귀포시 성산읍 고성오조로 74-1",
+                            "lat":  33.45037,
+                            "lon":  126.9148,
+                            "url":  "http://place.map.kakao.com/1512555158"
+                        },
+                        {
+                            "name":  "랍씨네",
+                            "area":  "동쪽",
+                            "category":  "양식 · 해산물 · 바닷가재",
+                            "address":  "제주특별자치도 서귀포시 성산읍 신양로122번길 57",
+                            "lat":  33.43518,
+                            "lon":  126.91754,
+                            "url":  "http://place.map.kakao.com/1214178011"
+                        },
+                        {
+                            "name":  "성산 갈치조림 순덕이네",
+                            "area":  "동쪽",
+                            "category":  "한식 · 해물,생선",
+                            "address":  "제주특별자치도 서귀포시 성산읍 온평서로 48",
+                            "lat":  33.41222,
+                            "lon":  126.89658,
+                            "url":  "http://place.map.kakao.com/9159798"
+                        },
+                        {
+                            "name":  "산지해장국 성산점",
+                            "area":  "동쪽",
+                            "category":  "한식 · 해장국",
+                            "address":  "제주특별자치도 서귀포시 성산읍 성산중앙로 30-4",
+                            "lat":  33.46229,
+                            "lon":  126.93291,
+                            "url":  "http://place.map.kakao.com/673380226"
+                        },
+                        {
+                            "name":  "봉순이네흑돼지",
+                            "area":  "서쪽",
+                            "category":  "한식 · 육류,고기",
+                            "address":  "제주특별자치도 서귀포시 대정읍 영어도시로 64",
+                            "lat":  33.27776,
+                            "lon":  126.27957,
+                            "url":  "http://place.map.kakao.com/26922347"
+                        },
+                        {
+                            "name":  "검은노루",
+                            "area":  "서쪽",
+                            "category":  "한식 · 국수",
+                            "address":  "제주특별자치도 서귀포시 대정읍 상모로 257",
+                            "lat":  33.22387,
+                            "lon":  126.26172,
+                            "url":  "http://place.map.kakao.com/1930206811"
+                        },
+                        {
+                            "name":  "더비치크랩 제주협재점",
+                            "area":  "서쪽",
+                            "category":  "양식 · 해산물",
+                            "address":  "제주특별자치도 제주시 한림읍 협재2길 10-1",
+                            "lat":  33.39225,
+                            "lon":  126.24109,
+                            "url":  "http://place.map.kakao.com/1783500473"
+                        },
+                        {
+                            "name":  "갈치왕 중문본점",
+                            "area":  "서쪽",
+                            "category":  "한식 · 해물,생선",
+                            "address":  "제주특별자치도 서귀포시 일주서로 1146",
+                            "lat":  33.26465,
+                            "lon":  126.39076,
+                            "url":  "http://place.map.kakao.com/967549394"
+                        },
+                        {
+                            "name":  "삼일식당",
+                            "area":  "서쪽",
+                            "category":  "한식 · 해장국",
+                            "address":  "제주특별자치도 제주시 한림읍 한림상로 92",
+                            "lat":  33.40859,
+                            "lon":  126.26355,
+                            "url":  "http://place.map.kakao.com/11139099"
+                        },
+                        {
+                            "name":  "어촌계식당",
+                            "area":  "서쪽",
+                            "category":  "한식 · 해물,생선 · 회",
+                            "address":  "제주특별자치도 서귀포시 대정읍 노을해안로 724",
+                            "lat":  33.27641,
+                            "lon":  126.17102,
+                            "url":  "http://place.map.kakao.com/26404759"
+                        },
+                        {
+                            "name":  "순천미향 제주산방산본점",
+                            "area":  "서쪽",
+                            "category":  "한식 · 해물,생선",
+                            "address":  "제주특별자치도 서귀포시 안덕면 사계남로216번길 24-73",
+                            "lat":  33.23566,
+                            "lon":  126.31248,
+                            "url":  "http://place.map.kakao.com/11996067"
+                        },
+                        {
+                            "name":  "화산 제주신화월드점",
+                            "area":  "서쪽",
+                            "category":  "한식 · 육류,고기",
+                            "address":  "제주특별자치도 서귀포시 안덕면 신화역사로304번길 98",
+                            "lat":  33.30453,
+                            "lon":  126.31591,
+                            "url":  "http://place.map.kakao.com/1924425197"
+                        },
+                        {
+                            "name":  "만복흑돼지",
+                            "area":  "서쪽",
+                            "category":  "한식 · 육류,고기",
+                            "address":  "제주특별자치도 서귀포시 안덕면 산방로 53",
+                            "lat":  33.24358,
+                            "lon":  126.32686,
+                            "url":  "http://place.map.kakao.com/18494916"
+                        },
+                        {
+                            "name":  "영해식당",
+                            "area":  "서쪽",
+                            "category":  "한식",
+                            "address":  "제주특별자치도 서귀포시 대정읍 하모상가로 34-2",
+                            "lat":  33.2214,
+                            "lon":  126.25248,
+                            "url":  "http://place.map.kakao.com/9283811"
+                        },
+                        {
+                            "name":  "더비치크랩 제주산방산점",
+                            "area":  "서쪽",
+                            "category":  "양식 · 해산물",
+                            "address":  "제주특별자치도 서귀포시 안덕면 사계남로 168",
+                            "lat":  33.22822,
+                            "lon":  126.30771,
+                            "url":  "http://place.map.kakao.com/236492368"
+                        },
+                        {
+                            "name":  "색달식당 순살갈치조림 서귀포본점",
+                            "area":  "서쪽",
+                            "category":  "한식 · 해물,생선",
+                            "address":  "제주특별자치도 서귀포시 예래로 255-18",
+                            "lat":  33.24181,
+                            "lon":  126.38624,
+                            "url":  "http://place.map.kakao.com/17809788"
+                        },
+                        {
+                            "name":  "우정해장국",
+                            "area":  "서쪽",
+                            "category":  "한식 · 해장국",
+                            "address":  "제주특별자치도 제주시 한림읍 한림상로 139",
+                            "lat":  33.41158,
+                            "lon":  126.2672,
+                            "url":  "http://place.map.kakao.com/9298964"
+                        },
+                        {
+                            "name":  "옹포횟집",
+                            "area":  "서쪽",
+                            "category":  "한식 · 해물,생선 · 회",
+                            "address":  "제주특별자치도 제주시 한림읍 옹포2길 10",
+                            "lat":  33.39985,
+                            "lon":  126.24972,
+                            "url":  "http://place.map.kakao.com/2130013103"
+                        },
+                        {
+                            "name":  "바당길",
+                            "area":  "서쪽",
+                            "category":  "한식 · 국수 · 칼국수",
+                            "address":  "제주특별자치도 제주시 한림읍 한림서길 18",
+                            "lat":  33.40975,
+                            "lon":  126.25852,
+                            "url":  "http://place.map.kakao.com/500457527"
+                        },
+                        {
+                            "name":  "한라전복 본점",
+                            "area":  "서쪽",
+                            "category":  "한식 · 해물,생선 · 굴,전복",
+                            "address":  "제주특별자치도 서귀포시 대정읍 대한로 33",
+                            "lat":  33.23048,
+                            "lon":  126.2452,
+                            "url":  "http://place.map.kakao.com/1980729179"
+                        },
+                        {
+                            "name":  "고향흑돼지",
+                            "area":  "서쪽",
+                            "category":  "한식 · 육류,고기",
+                            "address":  "제주특별자치도 제주시 한림읍 한림해안로 29",
+                            "lat":  33.40775,
+                            "lon":  126.25357,
+                            "url":  "http://place.map.kakao.com/22300921"
+                        },
+                        {
+                            "name":  "꽁순이네",
+                            "area":  "서쪽",
+                            "category":  "한식",
+                            "address":  "제주특별자치도 제주시 애월읍 중산간서로 5642",
+                            "lat":  33.44691,
+                            "lon":  126.33871,
+                            "url":  "http://place.map.kakao.com/27174231"
+                        },
+                        {
+                            "name":  "사계해녀의집",
+                            "area":  "서쪽",
+                            "category":  "양식 · 해산물",
+                            "address":  "제주특별자치도 서귀포시 안덕면 형제해안로 13-1",
+                            "lat":  33.22788,
+                            "lon":  126.30504,
+                            "url":  "http://place.map.kakao.com/92698242"
+                        },
+                        {
+                            "name":  "금능해장국",
+                            "area":  "서쪽",
+                            "category":  "한식 · 해장국",
+                            "address":  "제주특별자치도 제주시 한림읍 금능길 85",
+                            "lat":  33.38924,
+                            "lon":  126.23212,
+                            "url":  "http://place.map.kakao.com/759580924"
+                        },
+                        {
+                            "name":  "흑돼지BBQ",
+                            "area":  "서귀포",
+                            "category":  "한식 · 육류,고기",
+                            "address":  "제주특별자치도 서귀포시 태평로353번길 7",
+                            "lat":  33.24683,
+                            "lon":  126.55966,
+                            "url":  "http://place.map.kakao.com/25448888"
+                        },
+                        {
+                            "name":  "솔동산고기국수",
+                            "area":  "서귀포",
+                            "category":  "한식 · 국수",
+                            "address":  "제주특별자치도 서귀포시 부두로 23",
+                            "lat":  33.24294,
+                            "lon":  126.56522,
+                            "url":  "http://place.map.kakao.com/23825088"
+                        },
+                        {
+                            "name":  "싱싱올레해산물",
+                            "area":  "서귀포",
+                            "category":  "양식 · 해산물",
+                            "address":  "제주특별자치도 서귀포시 중앙로48번길 14",
+                            "lat":  33.24907,
+                            "lon":  126.56313,
+                            "url":  "http://place.map.kakao.com/26820386"
+                        },
+                        {
+                            "name":  "삼무뚝배기갈치",
+                            "area":  "서귀포",
+                            "category":  "한식 · 해물,생선",
+                            "address":  "제주특별자치도 서귀포시 칠십리로 119",
+                            "lat":  33.24269,
+                            "lon":  126.56724,
+                            "url":  "http://place.map.kakao.com/11313882"
+                        },
+                        {
+                            "name":  "은희네해장국 서귀포점",
+                            "area":  "서귀포",
+                            "category":  "한식 · 해장국",
+                            "address":  "제주특별자치도 서귀포시 516로 84",
+                            "lat":  33.26048,
+                            "lon":  126.58218,
+                            "url":  "http://place.map.kakao.com/24839178"
+                        },
+                        {
+                            "name":  "부두회수산",
+                            "area":  "서귀포",
+                            "category":  "한식 · 해물,생선 · 회",
+                            "address":  "제주특별자치도 서귀포시 칠십리로 94",
+                            "lat":  33.24061,
+                            "lon":  126.56569,
+                            "url":  "http://place.map.kakao.com/731122614"
+                        },
+                        {
+                            "name":  "뽈살집 제주본점",
+                            "area":  "서귀포",
+                            "category":  "한식 · 육류,고기",
+                            "address":  "제주특별자치도 서귀포시 중정로91번길 41",
+                            "lat":  33.25083,
+                            "lon":  126.56285,
+                            "url":  "http://place.map.kakao.com/11733078"
+                        },
+                        {
+                            "name":  "봉주르마담",
+                            "area":  "서귀포",
+                            "category":  "간식 · 제과,베이커리",
+                            "address":  "제주특별자치도 서귀포시 대청로 33",
+                            "lat":  33.25271,
+                            "lon":  126.50336,
+                            "url":  "http://place.map.kakao.com/1627461903"
+                        },
+                        {
+                            "name":  "남매네흑돼지",
+                            "area":  "서귀포",
+                            "category":  "한식 · 육류,고기 · 삼겹살",
+                            "address":  "제주특별자치도 서귀포시 중정로61번길 24-1",
+                            "lat":  33.25,
+                            "lon":  126.56293,
+                            "url":  "http://place.map.kakao.com/1144232432"
+                        },
+                        {
+                            "name":  "도순고기국수",
+                            "area":  "서귀포",
+                            "category":  "한식 · 국수",
+                            "address":  "제주특별자치도 서귀포시 일주서로 409",
+                            "lat":  33.25284,
+                            "lon":  126.46509,
+                            "url":  "http://place.map.kakao.com/561231829"
+                        },
+                        {
+                            "name":  "달인해산물",
+                            "area":  "서귀포",
+                            "category":  "한식 · 해물,생선 · 회",
+                            "address":  "제주특별자치도 서귀포시 중앙로62번길 18",
+                            "lat":  33.25015,
+                            "lon":  126.56323,
+                            "url":  "http://place.map.kakao.com/26499401"
+                        },
+                        {
+                            "name":  "탐라갈치",
+                            "area":  "서귀포",
+                            "category":  "한식 · 해물,생선",
+                            "address":  "제주특별자치도 서귀포시 소암로 37",
+                            "lat":  33.24492,
+                            "lon":  126.56964,
+                            "url":  "http://place.map.kakao.com/10817858"
+                        },
+                        {
+                            "name":  "태평식당",
+                            "area":  "서귀포",
+                            "category":  "한식 · 해장국",
+                            "address":  "제주특별자치도 서귀포시 태평로 452",
+                            "lat":  33.24653,
+                            "lon":  126.56801,
+                            "url":  "http://place.map.kakao.com/1282274558"
+                        },
+                        {
+                            "name":  "자리돔횟집",
+                            "area":  "서귀포",
+                            "category":  "한식 · 해물,생선 · 회",
+                            "address":  "제주특별자치도 서귀포시 동홍동로 7",
+                            "lat":  33.25555,
+                            "lon":  126.57461,
+                            "url":  "http://place.map.kakao.com/9445099"
+                        },
+                        {
+                            "name":  "다정이네 올레시장본점",
+                            "area":  "서귀포",
+                            "category":  "한식",
+                            "address":  "제주특별자치도 서귀포시 동문로 59-1",
+                            "lat":  33.24939,
+                            "lon":  126.56681,
+                            "url":  "http://place.map.kakao.com/21473782"
+                        },
+                        {
+                            "name":  "88버거",
+                            "area":  "서귀포",
+                            "category":  "양식 · 햄버거",
+                            "address":  "제주특별자치도 서귀포시 동문로 63",
+                            "lat":  33.24924,
+                            "lon":  126.56712,
+                            "url":  "http://place.map.kakao.com/27559019"
+                        },
+                        {
+                            "name":  "기운네흑돼지",
+                            "area":  "서귀포",
+                            "category":  "한식 · 육류,고기",
+                            "address":  "제주특별자치도 서귀포시 서문로29번길 6",
+                            "lat":  33.24989,
+                            "lon":  126.55878,
+                            "url":  "http://place.map.kakao.com/20402606"
+                        },
+                        {
+                            "name":  "고씨네천지국수",
+                            "area":  "서귀포",
+                            "category":  "한식 · 국수",
+                            "address":  "제주특별자치도 서귀포시 중앙로79번길 4",
+                            "lat":  33.25175,
+                            "lon":  126.56075,
+                            "url":  "http://place.map.kakao.com/1197785972"
+                        },
+                        {
+                            "name":  "올레왕갈치 서귀포올레시장점",
+                            "area":  "서귀포",
+                            "category":  "한식 · 해물,생선",
+                            "address":  "제주특별자치도 서귀포시 중앙로42번길 9",
+                            "lat":  33.24851,
+                            "lon":  126.5628,
+                            "url":  "http://place.map.kakao.com/1056381412"
+                        },
+                        {
+                            "name":  "맨도롱 해장국",
+                            "area":  "서귀포",
+                            "category":  "한식 · 해장국",
+                            "address":  "제주특별자치도 서귀포시 태평로353번길 11",
+                            "lat":  33.24708,
+                            "lon":  126.5601,
+                            "url":  "http://place.map.kakao.com/17843839"
+                        }
+                    ]
+}
